@@ -1,0 +1,61 @@
+<!--top开始-->
+<div class="top-container hidden-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <a href="/" title="首页"><span>发现身边的美食！</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=# onclick="javascript:addFavorite2()"><span class="like">加入收藏</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="glyphicon glyphicon-phone"></span> <a href="{:U('page/i/','id=mobile')}"><span class="mobile">手机版</span></a>
+      </div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <span class="glyphicon glyphicon-user"></span> <span><a href="{:U('Member/index/')}">我的订单</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>
+          <a href="{:U('page/i/','id=liucheng')}" >购餐流程</a>
+        </span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>
+          <a href="{:U('page/i/','id=hezuo')}" >我是商家</a>
+          
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span>
+          <a href="{:U('page/i/','id=about')}" >在线帮助</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--top结束-->
+
+
+<literal>
+<script type="text/javascript">
+	function addFavorite2() {
+    var url = window.location;
+    var title = document.title;
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf("360se") > -1) {
+	        alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+	    }
+	    else if (ua.indexOf("msie 8") > -1) {
+	        window.external.AddToFavoritesBar(url, title); //IE8
+	    }
+	    else if (document.all) {
+	  try{
+	   window.external.addFavorite(url, title);
+	  }catch(e){
+	   alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+	  }
+	    }
+	    else if (window.sidebar) {
+	        window.sidebar.addPanel(title, url, "");
+	    }
+	    else {
+	  alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+	    }
+	}
+</script>
+</literal>
+
+
+     

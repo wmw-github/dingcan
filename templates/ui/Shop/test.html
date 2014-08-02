@@ -1,0 +1,21 @@
+
+				<volist name="shoplist" id="vo">
+		  	  		<div class="col-lg-3 col-xs-12 shop">
+			  	  		<a href="{:U('uc/','id='.$vo['sid'])}">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="{$url}{$vo.spic}" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2>{$vo.sname}</h2>
+						<span class="label label-default">人均：￥{$vo.sprice}</span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div>
+		  	  	</volist>
+
+
+  

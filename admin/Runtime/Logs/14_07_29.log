@@ -1,0 +1,1183 @@
+[ 2014-07-29T14:18:41+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: admin_key C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 9 行.
+
+[ 2014-07-29T14:18:41+08:00 ] 127.0.0.1 /admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.060087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060087s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015021s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015021s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015022s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015022s ]
+
+[ 2014-07-29T14:18:44+08:00 ] 127.0.0.1 /admin.php?m=Public&a=dologin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.045065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.045065s ]
+SQL: SHOW COLUMNS FROM `wm_members` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: verify C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 45 行.
+SQL: SELECT `uid`,`userpass`,`username`,`create_time`,`usergroup` FROM `wm_members` WHERE ( `username` = 'admin888' ) AND ( `userlevel` = 99 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: nickname C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: uuid C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 70 行.
+SQL: UPDATE `wm_members` SET `create_time`=1406614724,`last_login_time`=1406446098,`last_login_ip`='127.0.0.1' WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `wm_members` SET `create_time`=1406614724,`last_login_time`=1406446098,`last_login_ip`='127.0.0.1' WHERE ( uid= )
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-07-29T14:18:45+08:00 ] 127.0.0.1 /admin.php?&m=Config&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015022s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015021s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\admin\Lib\Action\ConfigAction.class.php 第 9 行.
+SQL: SELECT * FROM `wm_config` WHERE ( cate=0 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.165237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165237s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015022s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:18:57+08:00 ] 127.0.0.1 /admin.php?m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015021s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_foodorder` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodorder` LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.150216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150216s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015022s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015022s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:19:34+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.015021s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_shop` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.150216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150216s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015022s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015022s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:35:56+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015021s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015022s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.015021s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.015022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_shop` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.015022s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.150216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150216s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.015021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030043s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:36:09+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015021s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.015022s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.015022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.120173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120173s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015022s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015022s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015021s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015021s ]
+
+[ 2014-07-29T14:36:41+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment&p=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 10,10   [ RunTime:0.015022s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.105151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120173s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015021s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:36:45+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment&p=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015022s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.015021s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.015021s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.015022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.015021s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.120173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120173s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.015021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015021s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:39:24+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment&p=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010951s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.010951s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010951s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.010951s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: shop_id C:\wamp\www\admin\Lib\Action\ShopAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.087607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098558s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010951s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010951s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010951s ]
+
+[ 2014-07-29T14:40:45+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment&p=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.008521s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.008521s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.068168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068168s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008521s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.008521s ]
+INFO: [ view_end ] --END-- [ RunTime:0.008521s ]
+
+[ 2014-07-29T14:41:46+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.013723s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.013723s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.013723s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\32b72e0df69ccea1073ec681442513c5.php 第 186 行.
+NOTIC: [8] Undefined index: value C:\wamp\www\admin\Runtime\Cache\32b72e0df69ccea1073ec681442513c5.php 第 186 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\32b72e0df69ccea1073ec681442513c5.php 第 217 行.
+NOTIC: [8] Undefined index: value C:\wamp\www\admin\Runtime\Cache\32b72e0df69ccea1073ec681442513c5.php 第 217 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.150953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150953s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013723s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:41:50+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015022s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.015022s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_shop` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.165238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165238s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015022s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:41:53+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.015021s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015022s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.015022s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.015021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.015021s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.135195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135195s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.015021s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015021s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015022s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015022s ]
+
+[ 2014-07-29T14:43:04+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008870s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.008870s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.008871s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.008871s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.008870s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.008870s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.070963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079834s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008870s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008870s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.008871s ]
+INFO: [ view_end ] --END-- [ RunTime:0.008871s ]
+
+[ 2014-07-29T14:43:07+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008871s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.008870s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.008870s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.008870s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.079833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079833s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008871s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008871s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:44:05+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090129s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020029s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:45:49+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.010014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.010014s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080115s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010015s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020029s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:51:25+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.020029s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.010015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080116s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T14:53:30+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.100144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100144s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010015s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010015s ]
+
+[ 2014-07-29T14:55:28+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.040058s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.040058s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.020028s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.030043s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.010015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.010014s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.230331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.230331s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.010014s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040058s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010014s ]
+INFO: [ view_end ] --END-- [ RunTime:0.020029s ]
+
+[ 2014-07-29T14:55:31+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=commentdel&id=12
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.000000s ]
+SQL: DELETE FROM `wm_comment` WHERE ( `comment_id` = 12 ) [ RunTime:0.020029s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-07-29T14:55:32+08:00 ] 127.0.0.1 /admin.php?&m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.010015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090130s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010015s ]
+
+[ 2014-07-29T15:00:06+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.010797s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010796s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010797s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_shop` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.010797s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.107966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107966s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.010796s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021593s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T15:00:09+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=comment
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010797s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.010796s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010797s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010796s ]
+SQL: SHOW COLUMNS FROM `wm_comment` [ RunTime:0.010797s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_comment` LIMIT 1   [ RunTime:0.010796s ]
+SQL: SELECT * FROM `wm_comment` ORDER BY comment_id desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.097170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097170s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010796s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021593s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T15:00:30+08:00 ] 127.0.0.1 /admin.php?m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.010014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_foodorder` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodorder` LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090130s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T15:00:36+08:00 ] 127.0.0.1 /admin.php?m=Member&a=orderend&id=4
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.010014s ]
+SQL: UPDATE `wm_foodorder` SET `orderstatus`=4,`order_endtime`=1406617236 WHERE ( `oid` = 4 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-07-29T15:00:37+08:00 ] 127.0.0.1 /admin.php?&m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.010014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_foodorder` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodorder` LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100144s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T15:19:15+08:00 ] 127.0.0.1 /admin.php?m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.010014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_foodorder` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodorder` LIMIT 0,10   [ RunTime:0.010014s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.100144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100144s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020029s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T15:19:24+08:00 ] 127.0.0.1 /admin.php?m=Member&a=orderdetail&id=9
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010015s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_foodorder` WHERE ( `oid` = 9 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodorderext` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodorderext` WHERE ( 1=1 AND oid='9' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: order_dtime C:\wamp\www\admin\Runtime\Cache\cb93add75847eed2b99db21f73a879a9.php 第 12 行.
+NOTIC: [8] Undefined variable: vo C:\wamp\www\admin\Runtime\Cache\cb93add75847eed2b99db21f73a879a9.php 第 25 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.070101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070101s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T15:21:55+08:00 ] 127.0.0.1 /admin.php?m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.010015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_foodorder` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodorder` LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090129s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010015s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T15:22:11+08:00 ] 127.0.0.1 /admin.php?m=Member&a=orderdetail&id=10
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+SQL: SHOW COLUMNS FROM `wm_foodorder` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_foodorder` WHERE ( `oid` = 10 ) LIMIT 1   [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_foodorderext` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_foodorderext` WHERE ( 1=1 AND oid='10' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: order_dtime C:\wamp\www\admin\Runtime\Cache\cb93add75847eed2b99db21f73a879a9.php 第 12 行.
+NOTIC: [8] Undefined variable: vo C:\wamp\www\admin\Runtime\Cache\cb93add75847eed2b99db21f73a879a9.php 第 25 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.050072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050072s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010015s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010015s ]
+
+[ 2014-07-29T16:49:41+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007984s ]
+NOTIC: [8] Undefined index: admin_key C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 9 行.
+
+[ 2014-07-29T16:49:42+08:00 ] 127.0.0.1 /admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039917s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007984s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.007983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015967s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T16:49:44+08:00 ] 127.0.0.1 /admin.php?m=Public&a=dologin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007984s ]
+SQL: SHOW COLUMNS FROM `wm_members` [ RunTime:0.023951s ]
+NOTIC: [8] Undefined index: verify C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 45 行.
+SQL: SELECT `uid`,`userpass`,`username`,`create_time`,`usergroup` FROM `wm_members` WHERE ( `username` = 'admin888' ) AND ( `userlevel` = 99 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: nickname C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 61 行.
+NOTIC: [8] Undefined variable: uuid C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 70 行.
+SQL: UPDATE `wm_members` SET `create_time`=1406623784,`last_login_time`=1406446098,`last_login_ip`='127.0.0.1' WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `wm_members` SET `create_time`=1406623784,`last_login_time`=1406446098,`last_login_ip`='127.0.0.1' WHERE ( uid= )
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-07-29T16:49:44+08:00 ] 127.0.0.1 /admin.php?&m=Config&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007983s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.007983s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\admin\Lib\Action\ConfigAction.class.php 第 9 行.
+SQL: SELECT * FROM `wm_config` WHERE ( cate=0 )  [ RunTime:0.007983s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.111768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111768s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007983s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007983s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T16:49:47+08:00 ] 127.0.0.1 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007185s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.007185s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.007185s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.007185s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.007185s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.007185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_article` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.007185s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 167 行.
+NOTIC: [8] Undefined index: channlid C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 174 行.
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 167 行.
+NOTIC: [8] Undefined index: channlid C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 174 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.122147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122147s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.007185s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.007185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014370s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007185s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007185s ]
+
+[ 2014-07-29T16:49:50+08:00 ] 127.0.0.1 /admin.php?m=Articlecate&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007185s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.007185s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.007186s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.007185s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\17caba6beaf4caae731a8ce50645f310.php 第 164 行.
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\17caba6beaf4caae731a8ce50645f310.php 第 164 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.107776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107776s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.007186s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007186s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007185s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007185s ]
+
+[ 2014-07-29T16:50:00+08:00 ] 127.0.0.1 /admin.php?m=Articlecate&a=delete&id=13
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005820s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.005820s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.005820s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.005820s ]
+NOTIC: 建议使用I方法替代_get
+SQL: DELETE FROM `wm_article_cat` WHERE ( `acid` = 13 ) [ RunTime:0.011640s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-07-29T16:50:01+08:00 ] 127.0.0.1 /admin.php?&m=Articlecate&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005820s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.005820s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.005820s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.005820s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.005820s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\17caba6beaf4caae731a8ce50645f310.php 第 164 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.081480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081480s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005820s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005820s ]
+
+[ 2014-07-29T16:55:00+08:00 ] 127.0.0.1 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013519s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.013519s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.013520s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.027039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_article` LIMIT 1   [ RunTime:0.013519s ]
+SQL: SELECT * FROM `wm_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 167 行.
+NOTIC: [8] Undefined index: channlid C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 174 行.
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 167 行.
+NOTIC: [8] Undefined index: channlid C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 174 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.202792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.202792s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.013520s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.013519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027039s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T16:55:08+08:00 ] 127.0.0.1 /admin.php?m=Article&a=delete&id=40
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027039s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.013520s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.013520s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.000000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: DELETE FROM `wm_article` WHERE ( `aid` = 40 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-07-29T16:55:08+08:00 ] 127.0.0.1 /admin.php?&m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.013519s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.013520s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.013519s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_article` LIMIT 1   [ RunTime:0.013520s ]
+SQL: SELECT * FROM `wm_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 167 行.
+NOTIC: [8] Undefined index: channlid C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 174 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.229832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.229832s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.013519s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.013520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027039s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T16:55:10+08:00 ] 127.0.0.1 /admin.php?m=Article&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.012167s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.012167s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.182514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182514s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.012167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012167s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T16:55:56+08:00 ] 127.0.0.1 /admin.php?m=Article&a=addsave
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007984s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.007984s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.007983s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.007983s ]
+NOTIC: [8] Use of undefined constant 　　　　 - assumed '　　　　' C:\wamp\www\inc\Common\common.php 第 406 行.
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.000000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Common\common.php 第 110 行.
+SQL: INSERT INTO `wm_article` (`acid`,`atitle`,`create_time`,`content`) VALUES (15,'下单送积分',1406624155,'&lt;p&gt;即日起，凡是下单订餐即可获取积分奖励&lt;/p&gt;') [ RunTime:0.007983s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063868s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007983s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007983s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007983s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007983s ]
+
+[ 2014-07-29T16:55:57+08:00 ] 127.0.0.1 /admin.php?m=Article&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.007984s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.007983s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.007983s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.007983s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+NOTIC: [8] Undefined index: afid C:\wamp\www\inc\Extend\Library\ORG\Util\Category.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.103784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103784s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.007983s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015967s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-29T17:01:45+08:00 ] 127.0.0.1 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010951s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010951s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.010951s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010951s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_article` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 167 行.
+NOTIC: [8] Undefined index: channlid C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 174 行.
+NOTIC: [8] Undefined index: dcsort C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 167 行.
+NOTIC: [8] Undefined index: channlid C:\wamp\www\admin\Runtime\Cache\6a0fa1355e20b485f823227ab394fc93.php 第 174 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.186166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186166s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010950s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021901s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010951s ]
+

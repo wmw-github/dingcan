@@ -1,0 +1,112 @@
+[ 2014-07-21T02:43:35+08:00 ] 220.181.108.155 /index.php?m=cart&a=cartadd&id=78
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T02:43:36+08:00 ] 220.181.108.180 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T03:02:49+08:00 ] 66.249.74.133 /index.php?m=page&a=i&id=mobile
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T05:42:47+08:00 ] 66.249.74.133 /index.php?m=shop&a=flist&id=20
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T07:44:32+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=75
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T08:00:07+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=72
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T08:40:42+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=74
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T09:37:57+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=63
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T09:37:58+08:00 ] 66.249.74.120 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T09:44:43+08:00 ] 66.249.74.133 /index.php?m=shop&a=flist&id=19
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T10:09:40+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=71
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T10:27:43+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=68
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T10:34:23+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=64
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T10:58:04+08:00 ] 66.249.74.120 /index.php?m=shop&a=farealist&id=2
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T11:24:38+08:00 ] 66.249.74.120 /index.php?m=shop&a=farealist&id=1
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T11:33:09+08:00 ] 66.249.74.133 /index.php?m=shop&a=farealist&id=2
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T11:36:41+08:00 ] 220.181.108.176 /index.php?m=page&a=i&id=sess
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T11:40:19+08:00 ] 66.249.74.133 /index.php?m=shop&a=farealist&id=3
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T12:51:34+08:00 ] 123.125.71.31 /index.php?m=page&a=i&id=pays
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T13:40:28+08:00 ] 66.249.74.133 /index.php?m=shop&a=farealist&id=4
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T14:21:42+08:00 ] 66.249.74.120 /index.php?m=shop&a=farealist&id=4
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T14:32:44+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=hezuo
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T15:06:24+08:00 ] 220.181.108.94 /index.php?m=cart&a=cartadds&id=81
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T15:12:10+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=mobile
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T15:57:59+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadds&id=76
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T16:11:05+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadds&id=77
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T18:53:22+08:00 ] 123.125.71.48 /index.php?m=article&a=s&id=42
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-21T21:20:20+08:00 ] 66.249.69.223 /index.php?m=shop&a=farealist&id=1
+DEBUG: Cart Class Initialized
+
+[ 2014-07-21T22:31:17+08:00 ] 66.249.69.167 /index.php?m=shop&a=farealist&id=3
+DEBUG: Cart Class Initialized
+

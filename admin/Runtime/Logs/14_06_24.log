@@ -1,0 +1,654 @@
+[ 2014-06-24T16:00:18+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008338s ]
+NOTIC: [8] Undefined index:  admin_key C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 9 行.
+
+[ 2014-06-24T16:00:18+08:00 ] 127.0.0.1 /admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072318s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002028s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001805s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001273s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008220s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002827s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003184s ]
+
+[ 2014-06-24T16:00:20+08:00 ] 127.0.0.1 /admin.php?m=Public&a=dologin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005511s ]
+SQL: SHOW COLUMNS FROM `sn_members` [ RunTime:0.040568s ]
+NOTIC: [8] Undefined index:  verify C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 49 行.
+SQL: SELECT `uid`,`userpass`,`nickname`,`username`,`create_time`,`usergroup` FROM `sn_members` WHERE ( `username` = 'admin888' ) AND ( `userlevel` = 99 ) LIMIT 1   [ RunTime:0.021307s ]
+SQL: UPDATE `sn_members` SET `create_time`=1403596820,`last_login_time`=1403444685,`last_login_ip`='127.0.0.1' WHERE ( uid=2 ) [ RunTime:0.002226s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-06-24T16:00:22+08:00 ] 127.0.0.1 /admin.php?&m=Config&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001907s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010552s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.017776s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007289s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014587s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006664s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011447s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000766s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: [8] Undefined index:  id C:\wamp\www\admin\Lib\Action\ConfigAction.class.php 第 13 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=0 )  [ RunTime:0.004258s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.272833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.273495s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003333s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003813s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002851s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014353s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004574s ]
+
+[ 2014-06-24T16:00:26+08:00 ] 127.0.0.1 /admin.php?m=Config&a=index&id=3
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010841s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018175s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007701s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014750s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006392s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011536s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000591s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=3 )  [ RunTime:0.001516s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.201738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.202324s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001213s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001103s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005398s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002032s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002357s ]
+
+[ 2014-06-24T16:01:05+08:00 ] 127.0.0.1 /admin.php?m=Config&a=add
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003098s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.017806s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007958s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.020685s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.009273s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.016948s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000523s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+SQL: UPDATE `sn_config` SET `value`='rew' WHERE ( `name` = 'address' ) [ RunTime:0.001252s ]
+SQL: UPDATE `sn_config` SET `value`='4008-800-100' WHERE ( `name` = 'tel' ) [ RunTime:0.001673s ]
+SQL: UPDATE `sn_config` SET `value`='0' WHERE ( `name` = 'startpay' ) [ RunTime:0.000734s ]
+SQL: UPDATE `sn_config` SET `value`='0' WHERE ( `name` = 'pspay' ) [ RunTime:0.000563s ]
+SQL: UPDATE `sn_config` SET `value`='凡2月22日--2月26日在淘宝点外卖，返现50%，期待您的光临。' WHERE ( `name` = 'notice' ) [ RunTime:0.000449s ]
+SQL: UPDATE `sn_config` SET `value`='肯德基宅急送实行专属菜单及价格。为了保证食物品质，肯德基宅急送有送餐范围和服务时间限制。不同城市、不同送餐范围的菜单有所不同。不同时段产品品项及价格有所不同。详情以输入送餐地址后显示的菜单为准。不设最低起送金额，每单酌收8元外送费。' WHERE ( `name` = 'psarea' ) [ RunTime:0.000449s ]
+SQL: UPDATE `sn_config` SET `value`='17:00,19:00' WHERE ( `name` = 'opentime' ) [ RunTime:0.000428s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.177364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005151s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005678s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004692s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023235s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.009628s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010337s ]
+
+[ 2014-06-24T16:01:07+08:00 ] 127.0.0.1 /admin.php?m=Config&a=index&id=3
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010749s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.019489s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007201s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015198s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006646s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.012605s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000725s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=3 )  [ RunTime:0.001776s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.236358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.237131s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002026s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001823s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001318s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009235s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002927s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003451s ]
+
+[ 2014-06-24T16:01:09+08:00 ] 127.0.0.1 /admin.php?m=Config&a=index&id=0
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010804s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.019400s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.011260s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.024108s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.010307s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.016675s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000645s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=0 )  [ RunTime:0.001529s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.132746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133347s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001177s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001135s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004969s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001633s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2014-06-24T16:01:23+08:00 ] 127.0.0.1 /admin.php?m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001930s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.011234s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018455s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.006981s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014539s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.007608s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.017173s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000723s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodorder` [ RunTime:0.078313s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_foodorder` LIMIT 1   [ RunTime:0.001511s ]
+SQL: SELECT * FROM `sn_foodorder` LIMIT 0,10   [ RunTime:0.000749s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.093686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094021s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002750s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001722s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001152s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008447s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002667s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003014s ]
+
+[ 2014-06-24T16:01:27+08:00 ] 127.0.0.1 /admin.php?m=Member&a=orderend&id=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010729s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018724s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.006778s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014540s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006987s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011370s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+SQL: SHOW COLUMNS FROM `sn_foodorder` [ RunTime:0.033803s ]
+SQL: UPDATE `sn_foodorder` SET `orderstatus`=4,`order_endtime`=1403596887 WHERE ( `oid` = 1 ) [ RunTime:0.030655s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-06-24T16:01:27+08:00 ] 127.0.0.1 /admin.php?&m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.020179s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.039950s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.011965s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.021241s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.009271s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.016396s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000524s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodorder` [ RunTime:0.021388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_foodorder` LIMIT 1   [ RunTime:0.028188s ]
+SQL: SELECT * FROM `sn_foodorder` LIMIT 0,10   [ RunTime:0.000759s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053227s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001182s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001093s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004930s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001666s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2014-06-24T16:01:34+08:00 ] 127.0.0.1 /admin.php?m=Member&a=orderdetail&id=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010976s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018149s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.006829s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014198s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006554s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.010996s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000521s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Common\common.php 第 110 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Common\common.php 第 110 行.
+SQL: SHOW COLUMNS FROM `sn_foodorder` [ RunTime:0.014504s ]
+SQL: SELECT * FROM `sn_foodorder` WHERE ( `oid` = 1 ) LIMIT 1   [ RunTime:0.041580s ]
+SQL: SHOW COLUMNS FROM `sn_foodorderext` [ RunTime:0.054055s ]
+SQL: SELECT * FROM `sn_foodorderext` WHERE ( 1=1 AND oid='1' )  [ RunTime:0.017070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] A non well formed numeric value encountered C:\wamp\www\admin\Runtime\Cache\cb93add75847eed2b99db21f73a879a9.php 第 12 行.
+NOTIC: [8] Undefined variable: vo C:\wamp\www\admin\Runtime\Cache\cb93add75847eed2b99db21f73a879a9.php 第 25 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.095939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096246s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001101s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001270s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000800s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005085s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001646s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001847s ]
+
+[ 2014-06-24T16:27:07+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003162s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010268s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018685s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007044s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.018854s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.010059s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.013386s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000392s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_shop` [ RunTime:0.032250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_shop` LIMIT 1   [ RunTime:0.032683s ]
+SQL: SELECT * FROM `sn_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.000932s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.101401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101772s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001231s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001140s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000827s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005132s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001734s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001955s ]
+
+[ 2014-06-24T16:27:10+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001880s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.018570s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.035296s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.009623s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.019203s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.009026s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.015438s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000806s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.030770s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.043238s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.012970s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.023413s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.087578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087973s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001207s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001114s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000824s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005041s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001732s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001957s ]
+
+[ 2014-06-24T16:28:24+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=addsave
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003050s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.013064s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018684s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.008736s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014764s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.008735s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011589s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000529s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_shop` [ RunTime:0.022196s ]
+SQL: INSERT INTO `sn_shop` (`sname`,`scid`,`sarea`,`scontent`,`ssort`,`sprice`,`semail`,`sphone`,`spic`,`stime`) VALUES ('重庆鸡公煲',25,3,'正宗重庆鸡公煲，好吃实惠',0,30,'1207491516@qq.com',6788315,'/uploads/logo/20140624/53a936a7a6f35.jpg',1403598504) [ RunTime:0.056574s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.055261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055662s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002756s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002469s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002152s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010800s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003084s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003314s ]
+
+[ 2014-06-24T16:28:26+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010252s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.020098s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.010640s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.020226s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006698s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.012555s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000483s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.023687s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.038682s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.020217s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.013030s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.098909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099391s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002172s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001545s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001050s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007413s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002350s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002674s ]
+
+[ 2014-06-24T16:28:28+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002531s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010688s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018823s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007164s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015245s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006630s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.014259s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000848s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_shop` [ RunTime:0.016869s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_shop` LIMIT 1   [ RunTime:0.036757s ]
+SQL: SELECT * FROM `sn_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.001093s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.108017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108477s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001601s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001480s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001044s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006692s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002571s ]
+

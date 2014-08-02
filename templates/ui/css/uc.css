@@ -1,0 +1,76 @@
+.breadcrumbrow{
+	margin-top: 30px;
+}
+.top-content{
+	background-color: #EEEEEE;
+	height: 100px;
+	padding-top:10px;
+	margin-bottom: 20px;
+}
+.top-content .info{
+	margin-left: 10px;
+}
+.top-content .info h2{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.menu{
+	background-color: #EEEEEE;
+}
+.shopmenu .menu .food{
+	height: 200px;
+	background-color: white;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+.shopmenu .menu .food .addcart{
+	color: orange;
+}
+.shopmenu .menu img{
+	height: 150px;
+	width: 150px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+/*手机版*/
+.shopmenu .menu .mfood{
+	height: 150px;
+	background-color: white;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+
+}
+.shopmenu .menu .mfood img{
+	height: 120px;
+	width: 120px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.shopmenu .menu .mfood .foodinfo{
+	float: left;
+	margin-left: 30px;
+	padding-top: 20px;
+}
+.shopmenu .menu .mfood .foodinfo h2{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*评星*/
+#star{overflow:hidden;float: left;padding-left: 0px;padding-top: 0px;}
+#star li{float:left; width:20px; height:20px; margin:2px; display:inline; color:#999; font:bold 18px arial; cursor:pointer}
+#star .act{color:green}

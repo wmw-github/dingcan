@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>{$shopname}-商家中心-{$title}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="{$web.key}" name="description" />
+	<meta content="{$web.des}" name="author" />
+
+
+<link href="__ROOT__/templates/ui/images/favicon.ico" rel="shortcut icon" />
+<!--引入bootstrap核心css-->
+<link href="__ROOT__/templates/ui/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--自定义css-->
+<link href="__ROOT__/templates/ui/css/head.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/index.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/foot.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/uc.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<body>
+
+
+<include file="Public:header" />
+<!-- begin container -->
+
+
+<!--top 简介开始-->
+<div class="container">
+
+<div class="row breadcrumbrow">
+<ol class="breadcrumb">
+  <li><a href="/"><span class="glyphicon glyphicon-home">首页</span></a></li>
+  <volist name="shopinfo" id="vo">
+  <li><a href="{:U('shop/farealist/','id='.$vo['sarea'])}">{$foodareaname}</a></li>
+  </volist>
+  <li class="active">{$shopname}</li>
+</ol>
+</div>
+
+	<div class="row top-content">
+	<volist name="shopinfo" id="vo">
+		<div class="col-lg-4">
+			<div class="pull-left">
+			<img src="{$url}{$vo.spic}" width="77" height="77">
+			</div>
+			<div class="pull-left info">
+			<h2>{$vo.sname}</h2>
+			<div class="hidden-xs">
+			<p>营业时间：<span class="label label-default" id="dingdan">{$vo.opentime}:00--{$vo.closetime}:00</span>
+                <span id="s1" style="display:none;">{$vo.opentime}</span>
+				<span id="s2" style="display:none;">{$vo.closetime}</span><br>
+				<literal>
+						<script>
+							var myDate = new Date();
+							var data1 = document.getElementById("s1").innerText;
+							var data2 = document.getElementById("s2").innerText;
+							var data3 = '{$vo.closetime}';
+							//var button_obj = document.getElementById("dingdan");
+							var current = myDate.getHours();
+							//alert("data1="+data3);
+							if(data1<current && current<data2) 
+								{
+									document.write('<span class="label label-success">正常营业!</span>');
+								}else
+								{
+									document.write('<span class="label label-danger">打烊啦!</span>');
+								}
+
+						</script>
+					</literal>
+					</p>
+				</div><!--hidden-xs-->
+				<div class="visible-xs">
+						<volist name="shopinfo" id="vo">
+							 <a href="tel:{$vo.sphone}" class="btn btn-default">
+							 <span class="glyphicon glyphicon-phone-alt"></span> 电话订餐</a>
+						</volist>
+
+						<literal>
+						<script>
+							var myDate = new Date();
+							var data1 = document.getElementById("s1").innerText;
+							var data2 = document.getElementById("s2").innerText;
+							var data3 = '{$vo.closetime}';
+							//var button_obj = document.getElementById("dingdan");
+							var current = myDate.getHours();
+							//alert("data1="+data3);
+							if(data1<current && current<data2) 
+								{
+									document.write('<span class="label label-success">正常营业!</span>');
+								}else
+								{
+									document.write('<span class="label label-danger">打烊啦!</span>');
+								}
+
+						</script>
+						</literal>
+
+
+				</div>
+			</div>
+			</volist>
+		</div>
+
+
+		<div class="col-lg-4 hidden-xs" style="padding-top:20px;">
+		<!-- Button trigger modal -->
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  评价商家
+</button>
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+  评论列表
+</button>
+<div class="hidden">
+	<span id="result">{$star}</span>
+</div>
+	<ul id="star">
+		<li>★</li>
+		<li>★</li>
+		<li>★</li>
+		<li>★</li>
+		<li>★</li>
+	</ul>
+
+<!-- Modal1 评论列表 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">取消</span></button>
+        <h4 class="modal-title" id="myModalLabel">评论列表</h4>
+      </div>
+      <div class="modal-body">
+      <ul>
+      <if condition="!$commentlist">
+      没有评论
+      <else />
+	   <volist name="commentlist" id="vo">
+	   		<li style="margin-top:5px;">
+	   		{$vo.tel|substr=0,4}***{$vo.tel|substr=7,11}-
+	   		<code>
+    			{$vo.comment}
+    		</code>
+    		-<span class="label label-warning">评分:{$vo.star}</span>
+    		</li>
+	   </volist>
+	   </if>
+	   </ul>
+	   <!--分页
+	   <ul class="pagination">
+			{$page}
+		</ul>
+		-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 商家评论-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">取消</span></button>
+        <h4 class="modal-title" id="myModalLabel">评论商家</h4>
+      </div>
+      <div class="modal-body" style="margin-left:10px;">
+	    <form class="form-horizontal"role="form" enctype="multipart/form-data" action="{:U('Comment/addsave/')}" method="post">
+
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">手机号</label>
+			    <input type="text" class="form-control" name="tel" placeholder="请输入手机号">
+			  </div>
+
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">评论内容</label>
+			    <textarea class="form-control" rows="3" name="comment" placeholder="请输入评论内容"></textarea>
+			  </div>
+
+			  <div class="form-group">
+			  <label for="exampleInputEmail1">评分：</label>
+			  	<label class="radio-inline">
+				  <input type="radio" name="star" value="1"> 1
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="star" value="2"> 2
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="star" value="3" checked="true"> 3
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="star" value="4"> 4
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="star" value="5"> 5
+				</label>
+				</div>
+	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="sumbit" class="btn btn-primary">评论</button></form>
+      </div>
+    </div>
+  </div>
+</div>
+		</div><!--col-lg-4-->
+
+
+		<div class="col-lg-4 hidden-xs">
+		<volist name="shopinfo" id="vo">
+			<div class="pull-right">
+			 <p><span class="glyphicon glyphicon-glass"></span>送餐速度：30分钟</p>
+			 <p><span class="glyphicon glyphicon-earphone"></span>送餐电话：{$vo.sphone}</p>
+			 <p><span class="glyphicon glyphicon-map-marker"></span>餐厅地址：{$vo.sdizhi}</p>
+			</div>
+		</volist>
+		</div>
+
+	</div>
+</div>
+<!--top 简介结束-->
+<!--商家菜单开始-->
+<div class="container shopmenu">
+	<div class="row">
+		<div class="col-lg-9 menu">
+			<div class="contaner">
+				<div class="row">
+				<volist name="foodlist" id="vo">
+					<div class="col-lg-3 food hidden-xs">
+						<img src="{$url}{$vo.fpic}">
+						<br>
+						<small>{$vo.fname}</small>
+						<span class="label label-success">￥{$vo.fprice}</span>
+						<a href="{:U('Cart/cartadd/','id='.$vo['fid'])}" data-target="#ajax_target" data-trigger="ajax" class="button button-rounded button-flat-highlight" title="加入购物车"><span class="glyphicon glyphicon-plus addcart"></span></a>
+					
+					</div>
+
+					<div class="col-lg-3 mfood visible-xs">
+						<div class="pull-left">
+						<img src="{$url}{$vo.fpic}">
+						</div>
+						<div class="foodinfo">
+						<h2>{$vo.fname}</h2>
+						<p><span class="label label-success">￥{$vo.fprice}</span></p>
+						<p><a href="{:U('Cart/cartadds/','id='.$vo['fid'])}"  class="btn btn-danger btn-xs "><i class="fa fa-shopping-cart"></i> 加入购物车</a></p>
+						</div>
+					</div>
+				</volist>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 notice">
+		<div class="panel panel-inkfc hidden-xs">
+               <div class="panel-heading">
+               <span class="glyphicon glyphicon-shopping-cart"></span>我的菜单
+               </div>
+                <div class="panel-body">
+                 <div id="ajax_target"><div id="test"></div></div>
+                 </div>
+         </div>
+         <div class="panel panel-inkfc hidden-xs">
+         	<div class="panel-heading">
+               <span class="glyphicon glyphicon-volume-up"></span>商家公告
+            </div>
+            <div class="panel-body">
+            	<volist name="shopinfo" id="vo">
+                 <p>{$vo.scontent}</p>
+                 </volist>
+            </div>
+         </div>
+		</div>
+	</div>
+</div>
+
+
+<include file="Public:foot" />
+
+
+<script src="__ROOT__/Public/js/bootstrap.min.js"></script> 
+<script src="__ROOT__/Public/js/sco.ajax.js"></script> 
+<literal>
+
+<script type="text/javascript"> 
+$(document).ready(function(){   
+	$('#test').load('/index.php/Cart/cart');//index.php?m=Cart&a=cart
+	
+	});
+</script>
+
+
+<script>
+window.onload = function(){
+
+  	var star = document.getElementById("star");
+    var star_li = star.getElementsByTagName("li");
+    var result = document.getElementById("result").innerText;
+    //alert(parseInt(result));//转成int类型
+    var len = parseInt(result);
+    var i=0;
+   
+        for(i=0; i<len; i++){
+            star_li[i].className = "act";
+                    
+        }
+    
+
+}
+</script>
+
+
+</literal>
+  
+	<!-- END CORE PLUGINS -->
+</body>
+<!-- END BODY -->
+</html>

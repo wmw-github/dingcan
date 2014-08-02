@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>{$foodareaname}附近的餐厅-{$title}-{$name}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="{$web.key}" name="description" />
+	<meta content="{$web.des}" name="author" />
+<link href="__ROOT__/templates/ui/images/favicon.ico" rel="shortcut icon" />
+<!--引入bootstrap核心css-->
+<link href="__ROOT__/templates/ui/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--自定义css-->
+<link href="__ROOT__/templates/ui/css/head.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/index.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/foot.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/shop.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<body>
+
+<include file="Public:header" />
+<!-- begin container -->
+
+<div class="container shop-area" style="margin-top:5px;">
+<div class="row">
+<ol class="breadcrumb">
+  <li><a href="/"><span class="glyphicon glyphicon-home">首页</span></a></li>
+  <li>餐厅</li>
+  <li class="active">{$foodareaname}</li>
+  <a href="/" target="_blank"><span class="area">[切换地区]</span></a>
+</ol>
+</div>
+<hr>
+<include file="Public:ad" />
+
+
+	<div class="row topshop">
+	<span class="title"><strong><span class="glyphicon glyphicon-fire"></span> 推荐商家</strong></span>
+<hr>
+	<volist name="shoplisttop" id="vo">
+		<div class="col-lg-3 shop hidden-xs">
+		<a href="{:U('shop/uc/','id='.$vo['sid'])}">
+			<div class="shopinfo">
+			<div class="pull-left img">
+			<img src="{$url}{$vo.spic}" width="77" height="77">
+			</div>
+			<div class="pull-left info">
+			<h2>{$vo.sname}</h2>
+			<span class="label label-default">人均：￥{$vo.sprice}</span><span class="label label-warning">{$vo.yingye}</span><br>
+			<p>满7元起 免费配送</p>
+			</div>
+			</div>
+		</a>
+		</div>
+		<div class="col-lg-3 mshop visible-xs">
+		<a href="{:U('shop/uc/','id='.$vo['sid'])}">
+			<div class="shopinfo">
+			<div class="pull-left img">
+			<img src="{$url}{$vo.spic}" width="77" height="77">
+			</div>
+			<div class="pull-left info">
+			<h2>{$vo.sname}</h2>
+			<span class="label label-default">人均：￥{$vo.sprice}</span><br>
+			<p>满7元起 免费配送</p>
+			</div>
+			</div>
+		</a>
+		</div>
+	</volist>
+		
+	</div><!--row-->
+		  	  	<div class="row shoplist">
+		  	  	<span class="title"><strong><span class="glyphicon glyphicon-flag"></span> 最新商家</strong></span>
+<hr>
+
+<ul class="nav nav-pills" role="tablist">
+<li><a href="#" onclick="javascript:window.top.location.reload()">全部</a></li>
+
+<volist name="foodcatlist" id="sub">
+	   <li> <a href="{:U('Shop/test/','id='.$sub['fcid'])}" data-target="#ajax_target" data-trigger="ajax" onclick="aaa()">{$sub.fcname}</a></li>
+
+</volist>
+</ul>
+
+<hr>
+<div id="ajax_target"><div id="test"></div></div>
+				<div id="did"><!--点击口味隐藏此div-->
+		  	  	<volist name="shoplist" id="vo">
+		  	  		<div class="col-lg-3 col-xs-12 shop hidden-xs" >
+			  	  		<a href="{:U('uc/','id='.$vo['sid'])}">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="{$url}{$vo.spic}" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2>{$vo.sname}</h2>
+						<span class="label label-default">人均：￥{$vo.sprice}</span><span class="label label-warning">{$vo.yingye}</span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div>
+		  	  		<div class="col-lg-3 col-xs-12 mshop visible-xs" >
+			  	  		<a href="{:U('uc/','id='.$vo['sid'])}">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="{$url}{$vo.spic}" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2>{$vo.sname}</h2>
+						<span class="label label-default">人均：￥{$vo.sprice}</span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div>
+		  	  	</volist>
+		  	  	</div>
+		  	  	</div>		
+
+
+</div> <!-- container --> 
+
+
+
+<include file="Public:foot" />
+<script src="__ROOT__/Public/js/bootstrap.min.js"></script> 
+<script src="__ROOT__/Public/js/sco.ajax.js"></script> 
+<literal>
+
+<script type="text/javascript"> 
+$(document).ready(function(){   
+	$('#test').load('/index.php?m=Shop&a=test');
+	
+	});
+</script>
+<script type="text/javascript"> 
+function aaa(){
+    document.getElementById('did').style.display="none";
+}
+
+</script>
+
+</literal>
+
+	<!-- END CORE PLUGINS -->
+</body>
+<!-- END BODY -->
+</html>

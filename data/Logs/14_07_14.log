@@ -1,0 +1,127 @@
+[ 2014-07-14T00:53:30+08:00 ] 66.249.65.212 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T00:55:02+08:00 ] 66.249.65.225 /index.php?m=Cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000920s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000710s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000092s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001268s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001134s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000939s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000985s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000110s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.069754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069869s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000321s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000327s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001459s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000640s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2014-07-14T04:34:58+08:00 ] 69.58.178.58 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:00+08:00 ] 69.58.178.58 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:02+08:00 ] 69.58.178.58 /index.php?m=page&a=i&id=about
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:04+08:00 ] 69.58.178.58 /index.php?m=shop&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:06+08:00 ] 69.58.178.58 /index.php?m=article&a=l&id=15
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-14T04:35:09+08:00 ] 69.58.178.58 /index.php?m=member&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:11+08:00 ] 69.58.178.58 /index.php?m=article&a=l&id=13
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-14T04:35:13+08:00 ] 69.58.178.58 /index.php?m=index&a=flist&id=19
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:15+08:00 ] 69.58.178.58 /index.php?m=index&a=flist&id=20
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:17+08:00 ] 69.58.178.58 /index.php?m=index&a=flist&id=21
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T04:35:19+08:00 ] 69.58.178.58 /index.php?m=index&a=flist&id=22
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T06:20:49+08:00 ] 66.249.65.225 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T10:42:37+08:00 ] 66.249.65.199 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T16:58:29+08:00 ] 220.181.108.108 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T17:25:26+08:00 ] 220.181.108.186 /index.php?m=index&a=flist&id=22
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T18:07:40+08:00 ] 122.6.164.39 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T18:07:44+08:00 ] 122.6.164.39 /index.php?m=Cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000724s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000596s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000090s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000976s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000929s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000795s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000801s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000113s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058107s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000322s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000321s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001460s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000638s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2014-07-14T23:41:48+08:00 ] 123.125.71.44 /index.php?m=cart&a=cartadd&id=83
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-14T23:41:50+08:00 ] 123.125.71.45 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-14T23:57:06+08:00 ] 66.249.79.136 /
+DEBUG: Cart Class Initialized
+

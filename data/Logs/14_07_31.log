@@ -1,0 +1,82 @@
+[ 2014-07-31T08:25:04+08:00 ] 127.0.0.1 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-31T08:25:24+08:00 ] 127.0.0.1 /index.php?m=shop&a=farealist&id=1
+DEBUG: Cart Class Initialized
+
+[ 2014-07-31T08:25:27+08:00 ] 127.0.0.1 /index.php?m=Shop&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.014662s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.014662s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.073309s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `wm_config`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: opentime C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Array to string conversion C:\wamp\www\inc\Common\common.php 第 558 行.
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.014662s ]
+SQL: SELECT * FROM `wm_pages` LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.014662s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.014662s ]
+SQL: SELECT * FROM `wm_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.014662s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.058647s ]
+SQL: SELECT * FROM `wm_shop` WHERE ( `scid` = 0 ) AND ( sarea='1' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.161281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161281s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.014662s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014662s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-07-31T12:42:54+08:00 ] 127.0.0.1 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-31T12:43:09+08:00 ] 127.0.0.1 /index.php?m=shop&a=farealist&id=1
+DEBUG: Cart Class Initialized
+
+[ 2014-07-31T12:43:11+08:00 ] 127.0.0.1 /index.php?m=Shop&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.022139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033208s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.022139s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.033207s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.011070s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.011069s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `wm_config`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: opentime C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Array to string conversion C:\wamp\www\inc\Common\common.php 第 558 行.
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.011070s ]
+SQL: SELECT * FROM `wm_pages` LIMIT 4   [ RunTime:0.011069s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.022139s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.011069s ]
+SQL: SELECT * FROM `wm_shop` WHERE ( `scid` = 0 ) AND ( sarea='1' )  [ RunTime:0.011070s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.055346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055346s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.022139s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022139s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.011069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.011069s ]
+

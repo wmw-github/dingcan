@@ -1,0 +1,53 @@
+body{
+	background: url(../images/bg2.jpg);
+	background-color: #563c55;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.main{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.title h3{
+	color:#fff;
+	font-size: 30px;
+	text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	padding: 0 10px;
+	font-weight: bold;
+}
+.title h5{
+	color:#fff;
+	font-size: 24px;
+	text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	padding: 0 10px;
+	font-weight: bold;
+}
+.area{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.area a{
+	color: #fff;
+	text-decoration: none;
+}
+.area a:hover{
+	color: gray;
+	text-decoration: none;
+}
+.area img{
+	width: 100px;
+	height: 100px;
+}
+.area p{
+	font-size: 18px;
+	font-weight: bold;
+}
+.main .tui{
+	font-size: 20px;
+	font-weight: bold;
+	color: gray;
+}

@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'fcid', 1 => 'fcname', 2 => 'fpid', 3 => 'fcsort', 4 => 'fctop', 5 => 'ctime', 6 => 'sid', 7 => 'fcount', '_autoinc' => true, '_pk' => 'fcid', '_type' => array ( 'fcid' => 'int(10)', 'fcname' => 'char(90)', 'fpid' => 'int(15)', 'fcsort' => 'int(5)', 'fctop' => 'int(5)', 'ctime' => 'int(15)', 'sid' => 'int(10)', 'fcount' => 'int(5)', ), );?>

@@ -1,0 +1,24 @@
+[ 2014-07-22T03:04:06+08:00 ] 220.181.108.142 /index.php?m=index&a=flist&id=22
+DEBUG: Cart Class Initialized
+
+[ 2014-07-22T03:15:07+08:00 ] 220.181.108.183 /index.php?m=member&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-22T03:31:47+08:00 ] 123.125.71.71 /index.php?m=index&a=farealist&id=2
+DEBUG: Cart Class Initialized
+
+[ 2014-07-22T06:38:13+08:00 ] 180.149.133.15 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-22T10:17:46+08:00 ] 220.181.108.80 /index.php?m=member&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-22T17:06:06+08:00 ] 123.125.71.79 /index.php?m=index&a=flist&id=22
+DEBUG: Cart Class Initialized
+
+[ 2014-07-22T17:20:31+08:00 ] 66.249.69.167 /index.php?m=shop&a=farealist&id=4
+DEBUG: Cart Class Initialized
+
+[ 2014-07-22T23:10:55+08:00 ] 66.249.69.167 /index.php?m=index&a=flist&id=20
+DEBUG: Cart Class Initialized
+

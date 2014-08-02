@@ -1,0 +1,61 @@
+	<form class="form-horizontal" role="form"  method="post" action="{:U('Shop/cartsave/')}">
+<empty name="cartdata">
+   <div class="panel panel-cart">
+             <div class="panel-body">
+您的购物车为空！请添加菜品！
+</div>
+</div>
+<else /> 
+
+
+
+
+
+ <div id="collapseOne" class="panel-collapse collapse in" style="padding:0px 10px;font-size:12px;">
+ <div class="food-list-content">
+    <table class="table tp" width="220px">
+         <thead>
+          <tr>
+            <td width="90px">  菜品</td>
+            
+            <td width="80px">  数量</td>
+            <td width="40px">  小计</td>
+			<td></td>
+          </tr>
+         </thead>
+       <volist name="cartdata" id="vo">	
+          <tr>
+            <td > <small style="margin-top:3px;margin-bottom:0px;"> {$vo.name}</small></td>
+            <td >
+			<a class="add" href="{:U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=1')}">+</a>
+			{$vo.qty}
+				<a class="add" href="{:U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=-1')}">-</a>	
+			
+
+</td>
+            <td><small style="margin-top:1px;margin-bottom:0px;color:#D84A38;font-weight:600;">￥{$vo.subtotal}</small></td>
+            <td class="ts"><a href="{:U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=-'.$vo['qty'])}" ><i class="glyphicon glyphicon-remove"></i> </a></td>
+          </tr>
+		  </volist>
+          
+     
+        
+      </table>
+	  </div>
+	  <hr>
+	  
+	  <div>合计数量：<span class="pull-right">{$total_items}份</span></div>
+	  <div class="cart-totalpay">合计金额：<span class="pull-right">￥{$total}.00</span></div>
+	  <br>
+ 	<p align="center"><a href="{:U('Cart/index/')}" class="btn btn-danger"><i class="fa fa-shopping-cart"></i> 立刻结算</a> </p>
+      <p style="color:#953C00"> 友情提示：购物车菜品不要超过5样
+
+    
+</p>
+       		
+	
+			  </div>
+			    
+			  </empty>
+			  
+			

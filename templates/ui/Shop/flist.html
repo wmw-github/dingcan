@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>{$foodcatname}-商家风味-{$title}-{$name}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="{$web.key}" name="description" />
+	<meta content="{$web.des}" name="author" />
+	 <link href="__ROOT__/templates/ui/images/favicon.ico" rel="shortcut icon" />
+<!--引入bootstrap核心css-->
+<link href="__ROOT__/templates/ui/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--自定义css-->
+<link href="__ROOT__/templates/ui/css/head.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/index.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/foot.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/shop.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+	
+
+<body>
+
+ 
+  
+<include file="Public:header" />
+<!-- begin container -->
+
+<div class="container" style="margin-top:5px;">
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+
+<ol class="breadcrumb">
+  <li><a href="/"><span class="glyphicon glyphicon-home"> 首页</span></a></li>
+  <volist name="shoplist" id="vo">
+  <li><a href="{:U('Shop/farealist/','id='.$vo['sarea'])}">{$aname}</a></li>
+  </volist>
+  <li class="active">{$foodcatname}</li>
+</ol>
+<hr>
+
+     <div class="row">
+			<ul class="nav nav-pills" role="tablist">
+				<volist name="foodcatlist" id="sub">
+   					<li> <a href="{:U('Shop/flist/','id='.$sub['fcid'])}">{$sub.fcname}</a></li>
+
+				</volist>
+			</ul>
+			<hr>
+				<volist name="shoplist" id="vo">
+		  	  		<div class="col-lg-3 col-xs-12 shop">
+			  	  		<a href="{:U('uc/','id='.$vo['sid'])}" target="_blank">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="{$url}{$vo.spic}" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2>{$vo.sname}</h2>
+						<span class="label label-default">人均：￥{$vo.sprice}</span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div>
+		  	  	</volist>
+
+		  	 
+	 </div><!-- colend-->
+
+  </div>
+</div>
+
+
+
+</div> <!-- container --> 
+
+
+
+<include file="Public:foot" />
+<div class="container">
+	
+	</div>
+  
+	<!-- END CORE PLUGINS -->
+</body>
+<!-- END BODY -->
+</html>

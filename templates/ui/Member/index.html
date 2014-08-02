@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>我的外卖-{$name}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="{key}" name="description" />
+
+<link href="__ROOT__/templates/ui/images/favicon.ico" rel="shortcut icon" />
+<!--引入bootstrap核心css-->
+<link href="__ROOT__/templates/ui/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--自定义css-->
+<link href="__ROOT__/templates/ui/css/head.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/index.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/foot.css" rel="stylesheet">
+<link href="__ROOT__/templates/ui/css/shop.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+	
+</head>
+<!-- BEGIN BODY -->
+<body>
+  
+
+
+<include file="Public:header" />
+
+       
+<!-- begin container -->
+
+<div class="container" style="margin-top:50px;height:400px;">
+
+
+
+
+  <div class="row">
+<ol class="breadcrumb">
+  <li><a href="/"><span class="glyphicon glyphicon-home">首页</span></a></li>
+  <li>我的订单</li>
+</ol>
+</div>
+<div class="row" style="background-color:white;height:300px;">
+ <div class=" col-lg-12 col-md-12 col-xs-12">
+	    
+ <form class="form-horizontal" role="form"  method="post" action="{:U('Member/myorders/')}">
+
+<div class="row chaxun" style="padding-top:50px;">
+<div class="col-lg-4"></div>
+  <div class="col-lg-4">
+  <p class="help-block">请输入你的订餐手机号</p>
+    <div class="input-group">
+
+      <input type="text" class="form-control" name="id">
+	        <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">查询</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-4">
+
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+</form>
+<div class="row chaxundingdan">
+<div class="col-lg-4"></div>
+  <div class="col-lg-4">
+  <div class="help-block">
+  <br>
+若您的手机号查询不到订单，请联系客服。<br>
+
+	</div>
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-4">
+
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+
+	 </div>
+			 </div>		 
+			  
+</div><!-- end container -->
+
+
+
+<include file="Public:foot" />	
+
+
+</body>
+<!-- END BODY -->
+</html>

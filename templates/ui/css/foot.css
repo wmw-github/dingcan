@@ -1,0 +1,31 @@
+.foot{
+	margin-bottom: 50px;
+	border-left: 1px dotted #a5a5a5;
+}
+.foot a{
+	color: white;
+	text-decoration: none;
+}
+.foot a:hover{
+	color: gray;
+	text-decoration: none;
+}
+.copy a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.copy a:hover{
+	color: gray;
+	text-decoration: none;
+	font-weight: bold;
+}
+.mobile-nav{
+	background-color: green;
+	height: 40px;
+	padding-top: 10px;
+}
+.mobile-nav a{
+	color: white;
+	text-decoration: none;
+}

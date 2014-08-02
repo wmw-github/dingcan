@@ -1,0 +1,447 @@
+[ 2014-07-24T00:22:50+08:00 ] 66.249.69.2 /index.php?m=index&a=flist&id=19
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T01:11:47+08:00 ] 66.249.69.2 /index.php?m=index&a=flist&id=23
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T02:26:04+08:00 ] 66.249.69.23 /index.php?m=page&a=i&id=about
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T02:43:59+08:00 ] 199.217.119.4 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T03:17:56+08:00 ] 66.249.69.2 /index.php?m=index&a=farealist&id=4
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T04:22:34+08:00 ] 220.181.108.161 /index.php?m=shop&a=uc&id=6
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T05:29:19+08:00 ] 123.125.71.51 /index.php?m=cart&a=cartupdate&id=35f4a8d465e6e1edc05f3d8ab658c551&cid=-1
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-24T09:01:44+08:00 ] 180.149.133.13 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T09:49:08+08:00 ] 122.6.164.39 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T09:49:16+08:00 ] 122.6.164.39 /index.php?m=shop&a=uc&id=8
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T09:49:17+08:00 ] 122.6.164.39 /index.php?m=Cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000754s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000573s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000105s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000800s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000927s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000770s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000825s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000109s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056922s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000323s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000326s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001442s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000723s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2014-07-24T09:49:24+08:00 ] 122.6.164.39 /index.php?m=cart&a=cartadd&id=81
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000711s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000591s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000088s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000898s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000919s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000853s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000793s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000107s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.000873s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT * FROM `sn_food` WHERE ( `fid` = 81 ) LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: sid /home/kbbgiwvn/domains/wmwcom.com/public_html/web/Lib/Action/CartAction.class.php 第 30 行.
+NOTIC: [8] Undefined variable: var /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+
+[ 2014-07-24T09:49:25+08:00 ] 122.6.164.39 /index.php?&m=cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000709s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000579s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000111s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000819s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000940s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000852s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000830s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000113s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009451s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000326s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000360s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001485s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000671s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2014-07-24T09:49:29+08:00 ] 122.6.164.39 /index.php?m=cart&a=cartadd&id=81
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000752s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000569s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000105s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000795s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000936s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001285s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001224s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000204s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.001423s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT * FROM `sn_food` WHERE ( `fid` = 81 ) LIMIT 1   [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: sid /home/kbbgiwvn/domains/wmwcom.com/public_html/web/Lib/Action/CartAction.class.php 第 30 行.
+NOTIC: [8] Undefined variable: var /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+
+[ 2014-07-24T09:49:29+08:00 ] 122.6.164.39 /index.php?&m=cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.001071s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000799s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000159s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001144s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001392s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001186s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001211s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000176s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011143s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000414s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000378s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000577s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002307s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000876s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2014-07-24T09:49:31+08:00 ] 122.6.164.39 /index.php?m=cart&a=cartadd&id=76
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000729s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000565s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000091s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000788s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000929s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000766s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000825s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000109s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.000855s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT * FROM `sn_food` WHERE ( `fid` = 76 ) LIMIT 1   [ RunTime:0.000309s ]
+NOTIC: [8] Undefined index: sid /home/kbbgiwvn/domains/wmwcom.com/public_html/web/Lib/Action/CartAction.class.php 第 30 行.
+NOTIC: [8] Undefined variable: var /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+
+[ 2014-07-24T09:49:31+08:00 ] 122.6.164.39 /index.php?&m=cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000747s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000569s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000090s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000824s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000934s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000769s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000815s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000117s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009599s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000323s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000340s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001463s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2014-07-24T09:49:34+08:00 ] 122.6.164.39 /index.php?m=cart&a=index
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T09:49:47+08:00 ] 122.6.164.39 /index.php?m=cart&a=index
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T09:49:50+08:00 ] 122.6.164.39 /index.php?m=member&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T09:50:12+08:00 ] 122.6.164.39 /index.php?m=member&a=myorders
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T10:44:13+08:00 ] 123.125.71.75 /index.php?m=cart&a=cartadd&id=84
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-24T10:44:13+08:00 ] 123.125.71.105 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T10:50:26+08:00 ] 123.125.71.87 /index.php?m=cart&a=cartupdate&id=93db85ed909c13838ff95ccfa94cebd9&cid=-1
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-24T15:56:39+08:00 ] 140.249.71.195 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T16:21:13+08:00 ] 173.230.149.6 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T16:22:11+08:00 ] 173.230.149.6 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T16:35:08+08:00 ] 66.249.69.2 /index.php?m=shop&a=farealist&id=4
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T17:23:29+08:00 ] 60.213.3.50 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T17:23:43+08:00 ] 60.213.3.50 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T17:23:56+08:00 ] 60.213.3.50 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T17:25:09+08:00 ] 60.213.3.50 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T17:25:15+08:00 ] 60.213.3.50 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T17:25:18+08:00 ] 60.213.3.50 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T17:25:24+08:00 ] 60.213.3.50 /index.php?m=page&a=i&id=pays
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:21:50+08:00 ] 122.6.130.131 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:22:38+08:00 ] 122.6.130.131 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:23:01+08:00 ] 122.6.130.131 /index.php?m=shop&a=uc&id=7
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:23:02+08:00 ] 122.6.130.131 /index.php?m=Cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000722s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000579s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000088s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000818s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000946s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000885s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000832s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000110s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.058035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058172s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000373s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000413s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000378s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001916s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000722s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2014-07-24T19:45:27+08:00 ] 58.135.66.61 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:45:36+08:00 ] 61.49.56.47 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:45:45+08:00 ] 58.135.66.61 /index.php?m=shop&a=flist&id=20
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:45:45+08:00 ] 111.161.62.191 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:45:45+08:00 ] 111.161.57.163 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:45:45+08:00 ] 111.161.62.191 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:45:55+08:00 ] 58.135.66.61 /index.php?m=shop&a=flist&id=19
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:45:55+08:00 ] 61.49.56.48 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:46:11+08:00 ] 125.39.208.232 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:46:11+08:00 ] 58.135.66.61 /index.php?m=shop&a=uc&id=5
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T19:46:12+08:00 ] 58.135.66.61 /index.php?m=Cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000728s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000588s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000092s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000844s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001299s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001344s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001301s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000183s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013009s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000361s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000403s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001822s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000961s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2014-07-24T19:46:15+08:00 ] 111.30.141.47 /index.php?m=Cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000854s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000901s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000154s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001284s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001274s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001202s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001253s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000172s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010753s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000343s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001835s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000830s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2014-07-24T20:28:01+08:00 ] 220.181.108.108 /index.php?m=index&a=farealist&id=2
+DEBUG: Cart Class Initialized
+
+[ 2014-07-24T22:00:25+08:00 ] 123.125.71.40 /index.php?m=cart&a=cartadd&id=82
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-24T22:00:26+08:00 ] 123.125.71.36 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+

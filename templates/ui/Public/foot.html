@@ -1,0 +1,78 @@
+
+<!--网站底部-->
+<hr>
+<div class="container hidden-xs">
+	<div class="row">
+		<div class="col-lg-3 foot">
+			<p><a title="支付方式" href="{:U('page/i/','id=pays')}">支付方式</a></p>
+			<p><a title="服务费用" href="{:U('page/i/','id=sess')}">服务费用</a></p>
+		</div>
+		<div class="col-lg-3 foot">
+			<p><a title="网站介绍" href="{:U('page/i/','id=about')}">网站介绍</a></p>
+			<p><a title="招贤纳士" href="{:U('page/i/','id=add')}">招贤纳士</a></p>
+		</div>
+		<div class="col-lg-3 foot">
+			<p><a title="订单查询" href="{:U('Member/index/')}">订单查询</a></p>
+			<p><a title="订单查询" href="{:U('Article/l/','id=15')}">常见问题</a></p>
+		</div>
+		<div class="col-lg-3 foot">
+		<volist name="llist" id="vo">
+		<p><a  href="{$vo.link}"> {$vo.linkname} </a></p>
+		</volist>
+		</div>
+	</div>
+</div>
+
+<!--版权-->
+<div class="copy">
+<p align="center">© 2014 {$name} - {$icp}</p>
+<p align="center" class="ps">程序由<a title="民伟网络" href="http://www.wangminwei.com/" target="_blank">民伟网络</a>驱动</p>
+</div>
+
+<!--手机版底部导航-->
+<div class="container navbar-fixed-bottom visible-xs mobile-nav">
+  <div class="row ">
+  
+		<div class="col-md-4 col-xs-4">
+		<a class="icon-btn" href="{:U('Index/index/')}">
+		<span class="glyphicon glyphicon-home"></span>首页
+		</a>
+		</div>
+	 	<!-- <div class=" col-xs-3">
+		 <div class="btn-group dropup">
+		 	<a class="icon-btn dropdown-toggle" data-toggle="dropdown" >
+			<span class="glyphicon glyphicon-th"></span>地区
+			</a>
+			<ul class="dropdown-menu" style="min-width:245px;" role="menu">
+				<volist name="foodarealist" id="sub">
+
+					<li> 
+					<a class="btn" href="{:U('index/farealist/','id='.$sub['a_id'])}" >{$sub.foodareaname}</a>
+					</li>
+					<li class="divider"></li>
+				</volist>
+            </ul>
+		 </div>
+		</div> -->
+		<div class="col-md-4 col-xs-4">
+		 	<div class="btn-group dropup">
+		 	<a class="icon-btn" href="{:U('Member/index/')}">
+			<span class="glyphicon glyphicon-user"></span>我的订单
+			</a>
+			</div>
+		</div>
+
+		 <div class="col-md-4 col-xs-4">
+		 	<a class="icon-btn" href="{:U('Cart/index/')}">
+				
+				<div id="ajax_target"><span class="glyphicon glyphicon-shopping-cart"></span>购物车<span class="badge" >{$total_items}</span></div>
+			</a>
+		 </div>
+  </div>
+
+</div>
+<!--全局js-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="__ROOT__/templates/ui/bootstrap/js/bootstrap.min.js"></script> 

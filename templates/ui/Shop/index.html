@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>全部商家-{$title}-{$name}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="{key}" name="description" />
+	<meta content="{des}" name="author" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--引入Buttons按钮样式 与bootstrap核心css有冲突-->
+<link href="http://cdn.bootcss.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="__ROOT__/templates/new/bootstrap32/css/buttons.css">
+
+<!--引入bootstrap核心css-->
+<link href="__ROOT__/templates/new/bootstrap32/css/bootstrap.min.css" rel="stylesheet">
+<!-- Loading Flat UI -->
+<link href="__ROOT__/templates/new/css/flat-ui.css" rel="stylesheet">
+<!--自定义css-->
+<link href="__ROOT__/templates/new/css/head.css" rel="stylesheet">
+<!--nav css-->
+<link type="text/css" rel="stylesheet" href="__ROOT__/templates/new/css/tmall-nav.css" />
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<!-- BEGIN BODY -->
+<body>
+
+<include file="Public:header" />
+<!-- begin container -->
+
+<div class="container" style="margin-top:5px;">
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+
+<ol class="breadcrumb">
+  <li><a href="/"><span class="glyphicon glyphicon-home"> 首页</span></a></li>
+  <li class="active"><a href="{:U('Shop/index/')}">全部餐厅</a></li>
+</ol>
+<hr>
+
+     <div class="row">
+			  
+			  <volist name="shoplist" id="vo">
+				  <div class="col-lg-3 col-md-3 col-xs-12 shop">
+				     <a href="{:U('uc/','id='.$vo['sid'])}" target="_blank">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="{$url}{$vo.spic}" width="77" height="77">
+						</div>
+						<div class="pull-left info">
+						<p>{$vo.sname}</p>
+						<span class="label label-default">人均：￥{$vo.sprice}</span><br>
+						<span>满7元起 免费配送</span>
+						</div>
+						</div>
+					</a>
+				<div class="other">
+					<span>平均送餐时间：30分钟</span>
+				</div>
+					
+				  </div><!-- colend-->
+			</volist>
+		  
+	 </div><!-- colend-->
+
+  </div>
+</div>
+</div> <!-- container -->
+
+
+
+<include file="Public:foot" />
+
+<literal>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#test').load('/index.php?m=Cart&a=cart');
+	});
+</script>
+
+</literal>
+	<!-- END CORE PLUGINS -->
+</body>
+<!-- END BODY -->
+</html>

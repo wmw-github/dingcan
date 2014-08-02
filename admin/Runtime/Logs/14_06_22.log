@@ -1,0 +1,454 @@
+[ 2014-06-22T01:54:20+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004318s ]
+NOTIC: [8] Undefined index:  admin_key C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 9 行.
+
+[ 2014-06-22T01:54:20+08:00 ] 127.0.0.1 /admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004397s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053161s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002386s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002338s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002014s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009919s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003091s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003335s ]
+
+[ 2014-06-22T01:54:22+08:00 ] 127.0.0.1 /admin.php?m=Public&a=dologin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005221s ]
+SQL: SHOW COLUMNS FROM `sn_members` [ RunTime:0.012478s ]
+NOTIC: [8] Undefined index:  verify C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 49 行.
+SQL: SELECT `uid`,`userpass`,`nickname`,`username`,`create_time`,`usergroup` FROM `sn_members` WHERE ( `username` = 'admin888' ) AND ( `userlevel` = 99 ) LIMIT 1   [ RunTime:0.023039s ]
+SQL: UPDATE `sn_members` SET `create_time`=1403373262,`last_login_time`=1403323152,`last_login_ip`='127.0.0.1' WHERE ( uid=2 ) [ RunTime:0.001938s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-06-22T01:54:24+08:00 ] 127.0.0.1 /admin.php?&m=Config&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006212s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.011986s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018804s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.008591s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014887s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.008202s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011828s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000523s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: [8] Undefined index:  id C:\wamp\www\admin\Lib\Action\ConfigAction.class.php 第 13 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=0 )  [ RunTime:0.001681s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.182870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.183483s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001184s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001091s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000758s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004878s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001872s ]
+
+[ 2014-06-22T01:54:27+08:00 ] 127.0.0.1 /admin.php?m=Foodcat&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004278s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010987s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018888s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007448s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014623s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006617s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011923s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000382s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.030623s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.051051s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.152069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152446s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001254s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001088s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000752s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004970s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001699s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001920s ]
+
+[ 2014-06-22T01:54:32+08:00 ] 127.0.0.1 /admin.php?m=Food&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004255s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.011100s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018894s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007119s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014903s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006847s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011818s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000577s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.025655s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.032023s ]
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.042532s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sn_food Food  JOIN sn_foodcat Foodcat ON Foodcat.fcid=Food.fcid LIMIT 1   [ RunTime:0.051890s ]
+SQL: SELECT Food.fid AS fid,Food.fcid AS fcid,Food.fnum AS fnum,Food.fname AS fname,Food.ftitle AS ftitle,Food.fprice AS fprice,Food.fcontent AS fcontent,Food.fpic AS fpic,Food.fsort AS fsort,Food.ftop AS ftop,Food.fctime AS fctime,Food.status AS status,Food.salecount AS salecount,Food.iswaimai AS iswaimai,Food.farea AS farea,Food.fshop AS fshop,Foodcat.fcname AS fcname FROM sn_food Food  JOIN sn_foodcat Foodcat ON Foodcat.fcid=Food.fcid ORDER BY Food.fid desc LIMIT 0,10   [ RunTime:0.001622s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.130195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130639s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002297s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001762s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010216s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003175s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003578s ]
+
+[ 2014-06-22T01:54:36+08:00 ] 127.0.0.1 /admin.php?m=Food&a=edit&id=86
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004169s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010771s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.019915s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007034s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014820s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006739s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011703s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000644s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.031223s ]
+SQL: SELECT * FROM `sn_food` WHERE ( `fid` = 86 ) LIMIT 1   [ RunTime:0.044627s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.006245s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.019618s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.007687s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.007461s ]
+SQL: SHOW COLUMNS FROM `sn_shop` [ RunTime:0.008511s ]
+SQL: SELECT * FROM `sn_shop`  [ RunTime:0.021273s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.091166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091473s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001234s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001115s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005007s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001931s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002178s ]
+
+[ 2014-06-22T01:54:43+08:00 ] 127.0.0.1 /admin.php?m=Food&a=editsave
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004356s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.016488s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.030195s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.010841s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.025161s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.010354s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.018948s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000839s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.021838s ]
+SQL: UPDATE `sn_food` SET `fname`='麦当劳菜单',`fcid`=19,`farea`='1',`fshop`=6,`fcontent`='',`fsort`=0,`fprice`=50,`fctime`=1403373283 WHERE ( `fid` = 86 ) [ RunTime:0.033397s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.059544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059827s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001114s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001101s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000779s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004868s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001671s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001888s ]
+
+[ 2014-06-22T01:54:45+08:00 ] 127.0.0.1 /admin.php?m=Food&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004272s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.011584s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.019069s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.006971s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014653s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.007021s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.013266s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000619s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.016568s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.024179s ]
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.025961s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sn_food Food  JOIN sn_foodcat Foodcat ON Foodcat.fcid=Food.fcid LIMIT 1   [ RunTime:0.022527s ]
+SQL: SELECT Food.fid AS fid,Food.fcid AS fcid,Food.fnum AS fnum,Food.fname AS fname,Food.ftitle AS ftitle,Food.fprice AS fprice,Food.fcontent AS fcontent,Food.fpic AS fpic,Food.fsort AS fsort,Food.ftop AS ftop,Food.fctime AS fctime,Food.status AS status,Food.salecount AS salecount,Food.iswaimai AS iswaimai,Food.farea AS farea,Food.fshop AS fshop,Foodcat.fcname AS fcname FROM sn_food Food  JOIN sn_foodcat Foodcat ON Foodcat.fcid=Food.fcid ORDER BY Food.fid desc LIMIT 0,10   [ RunTime:0.001321s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052902s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001375s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001274s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005446s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001940s ]
+
+[ 2014-06-22T01:58:22+08:00 ] 127.0.0.1 /admin.php?m=Config&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005991s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.025838s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.040275s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.020596s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.040984s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.013287s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.021019s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000930s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: [8] Undefined index:  id C:\wamp\www\admin\Lib\Action\ConfigAction.class.php 第 13 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=0 )  [ RunTime:0.001546s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.150496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151059s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002376s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003387s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002955s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003186s ]
+
+[ 2014-06-22T01:58:26+08:00 ] 127.0.0.1 /admin.php?m=Config&a=index&id=3
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003629s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010551s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.019070s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.006922s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015329s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.007006s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.012777s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000396s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=3 )  [ RunTime:0.001628s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.222444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223032s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001271s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001126s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002607s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006971s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001661s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2014-06-22T01:58:44+08:00 ] 127.0.0.1 /admin.php?m=Config&a=index&id=0
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003711s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010187s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018495s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.006939s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015174s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006609s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.016442s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000870s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=0 )  [ RunTime:0.001552s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.142202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142789s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001187s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001153s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002645s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006919s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001648s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001860s ]
+
+[ 2014-06-22T21:44:43+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004316s ]
+NOTIC: [8] Undefined index:  admin_key C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 9 行.
+
+[ 2014-06-22T21:44:43+08:00 ] 127.0.0.1 /admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052466s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001178s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001032s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005495s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2014-06-22T21:44:45+08:00 ] 127.0.0.1 /admin.php?m=Public&a=dologin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] Wrong parameter count for stripslashes() C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `sn_members` [ RunTime:0.011665s ]
+NOTIC: [8] Undefined index:  verify C:\wamp\www\admin\Lib\Action\PublicAction.class.php 第 49 行.
+SQL: SELECT `uid`,`userpass`,`nickname`,`username`,`create_time`,`usergroup` FROM `sn_members` WHERE ( `username` = 'admin888' ) AND ( `userlevel` = 99 ) LIMIT 1   [ RunTime:0.022406s ]
+SQL: UPDATE `sn_members` SET `create_time`=1403444685,`last_login_time`=1403373262,`last_login_ip`='127.0.0.1' WHERE ( uid=2 ) [ RunTime:0.005787s ]
+NOTIC: [8] Undefined variable: var C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array C:\wamp\www\inc\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given C:\wamp\www\inc\Common\functions.php 第 247 行.
+
+[ 2014-06-22T21:44:47+08:00 ] 127.0.0.1 /admin.php?&m=Config&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010355s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018402s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007191s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.015502s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.009871s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.016409s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000763s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+NOTIC: [8] Undefined index:  id C:\wamp\www\admin\Lib\Action\ConfigAction.class.php 第 13 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=0 )  [ RunTime:0.001633s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.221924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222532s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001274s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001830s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001270s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007434s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002791s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003156s ]
+
+[ 2014-06-22T21:44:54+08:00 ] 127.0.0.1 /admin.php?m=Foodcat&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.010567s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018494s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.007147s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014968s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006598s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011371s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000662s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.019902s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.050024s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.143703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144123s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001617s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001660s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001073s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007061s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002299s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002602s ]
+
+[ 2014-06-22T21:44:58+08:00 ] 127.0.0.1 /admin.php?m=Food&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.011185s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.018279s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.006955s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.014840s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.006659s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.011453s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000391s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=127.0.0.1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\wamp\www\admin\Lib\Action\CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.010593s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.014305s ]
+SQL: SHOW COLUMNS FROM `sn_food` [ RunTime:0.024665s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sn_food Food  JOIN sn_foodcat Foodcat ON Foodcat.fcid=Food.fcid LIMIT 1   [ RunTime:0.022577s ]
+SQL: SELECT Food.fid AS fid,Food.fcid AS fcid,Food.fnum AS fnum,Food.fname AS fname,Food.ftitle AS ftitle,Food.fprice AS fprice,Food.fcontent AS fcontent,Food.fpic AS fpic,Food.fsort AS fsort,Food.ftop AS ftop,Food.fctime AS fctime,Food.status AS status,Food.salecount AS salecount,Food.iswaimai AS iswaimai,Food.farea AS farea,Food.fshop AS fshop,Foodcat.fcname AS fcname FROM sn_food Food  JOIN sn_foodcat Foodcat ON Foodcat.fcid=Food.fcid ORDER BY Food.fid desc LIMIT 0,10   [ RunTime:0.002194s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.099104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099494s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002098s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002155s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002429s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010545s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003636s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004072s ]
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>附近美食-{$title}-{$name}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="{$web.key}" name="description" />
+	<meta content="{$web.des}" name="author" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="__ROOT__/Public/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="__ROOT__/Public/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="__ROOT__/templates/kfc/css/kfc.css" rel="stylesheet" type="text/css"/>
+
+    <!--[if lt IE 9]>
+        <script src="__ROOT__/Public/js/html5shiv.min.js"></script>
+        <script src="__ROOT__/Public/js/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="__ROOT__/Public/js/jquery.js"></script>
+    <script src="__ROOT__/Public/js/bootstrap.min.js"></script> 
+
+ 	<script src="__ROOT__/Public/js/sco.ajax.js"></script> 
+
+<body>
+
+<include file="Public:header" />
+<!-- begin container -->
+
+<div class="container" style="margin-top:5px;">
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+
+
+
+     <div class="row">
+	  <div class="col-lg-3 col-md-3 col-xs-12">
+	  <div class="panel panel-inkfc hidden-xs">
+               <div class="panel-heading"><span class="glyphicon glyphicon-shopping-cart"></span>我的菜单</div>
+                <div class="panel-body">
+                 <div id="ajax_target"><div id="test"></div></div>
+                 </div>
+         </div>
+			<div class="panel panel-inkfc hidden-xs">
+			<div class="panel-heading"><span class="glyphicon glyphicon-map-marker"></span>  <b>附近美食</b></div>
+                <div class="panel-body">
+
+					<ul class="list-unstyled inleft">
+					  <volist name="foodarealist" id="sub">
+					   <li> <a href="{:U('index/farealist/','id='.$sub['a_id'])}" class="list-group-item"><span style="margin-left:60px;">{$sub.a_name}</span><span class="fa fa-caret-right pull-right"></span></a></li>
+					  </volist>
+					</ul>
+				</div>
+         </div>
+
+
+	</div><!-- colend-->
+		  	  <div class="col-lg-9 col-md-9 col-xs-12">
+		  	  <ul id="breadcrumb">
+				  <li><a href="/"><span class="glyphicon glyphicon-home"> </span></a></li>
+				  <li><a href="#"><span class="icon icon-beaker"> </span> 附近美食</a></li>
+				  <li><a href="#"><span class="icon icon-double-angle-right"></span> {$foodareaname}</a></li>
+			</ul>
+  <ul class="list-inline inmidd">
+  <volist name="foodlist" id="vo">
+  <li>
+     <div class="well col-xs-12" style="padding:3px;margin-bottom:20px;">
+	  <img width="160px" class=" hidden-xs" height="140px;" src="{$url}{$vo.fpic}">
+	  <img width="100px" class=" visible-xs" src="{$url}{$vo.fpic}">
+        <h3  class=" hidden-xs" style="width:150px">{$vo.fname} </h3>
+		<div class="pull-right">
+		<h3  class=" visible-xs pull-right" style="width:300px">{$vo.fname} </h3>
+		</div>
+		<p ><span class="pull-left" style="color:#FF7700;font-weight:600;font-size:14px"> ￥{$vo.fprice} </span><span class="pull-right"><a href="{:U('Cart/cartadd/','id='.$vo['fid'])}" data-target="#ajax_target" data-trigger="ajax" class="btn btn-danger btn-xs "><i class="fa fa-shopping-cart"></i> 加入购物车</a> </span></p>
+      <div class="clearfix"></div> </div>
+  </li>
+
+   </volist>
+   </ul>
+   <div class="clearfix"></div>
+
+	      </div><!-- colend-->
+	 </div><!-- colend-->
+  </div>
+</div>
+
+</div> <!-- container --> 
+
+
+
+<include file="Public:foot" />
+<div class="container">
+	<empty name="llist"><else /> 友情链接：<volist name="llist" id="vo"><a  href="{$vo.link}"> {$vo.linkname} </a> 　　</volist></empty>
+
+</div>
+
+<literal>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#test').load('/index.php?m=Cart&a=cart');
+
+	});
+</script>
+
+</literal>
+
+	<!-- END CORE PLUGINS -->
+</body>
+<!-- END BODY -->
+</html>

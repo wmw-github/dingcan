@@ -1,0 +1,258 @@
+[ 2014-07-19T00:22:13+08:00 ] 66.249.74.120 /index.php?m=shop&a=uc&id=5
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T00:29:53+08:00 ] 66.249.74.120 /index.php?m=index&a=farealist&id=2
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T01:14:46+08:00 ] 66.249.74.120 /index.php?m=article&a=s&id=41
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T01:21:05+08:00 ] 66.249.74.120 /index.php?m=shop&a=flist&id=22
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T01:42:12+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=70
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T02:16:36+08:00 ] 66.249.74.133 /index.php?m=shop&a=uc&id=5
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T02:19:38+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=67
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T02:27:03+08:00 ] 66.249.74.120 /index.php?m=index&a=farealist&id=2
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T02:36:13+08:00 ] 66.249.74.120 /index.php?m=shop&a=flist&id=21
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T02:37:34+08:00 ] 66.249.74.120 /index.php?m=index&a=flist&id=19
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T02:41:05+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=sess
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T02:42:30+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=76
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T02:48:37+08:00 ] 66.249.74.133 /index.php?m=shop&a=uc&id=7
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T02:50:13+08:00 ] 66.249.74.133 /index.php?m=shop&a=flist&id=21
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T03:18:02+08:00 ] 66.249.74.133 /index.php?m=shop&a=flist&id=25
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T03:48:12+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=about
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T03:48:26+08:00 ] 66.249.74.133 /index.php?m=shop&a=flist&id=22
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T04:01:57+08:00 ] 220.181.108.161 /index.php?m=article&a=l&id=13
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T04:04:21+08:00 ] 66.249.74.120 /index.php?m=index&a=flist&id=20
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T04:32:24+08:00 ] 66.249.74.120 /index.php?m=index&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T04:33:06+08:00 ] 66.249.74.120 /index.php?m=index&a=flist&id=25
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T04:33:48+08:00 ] 66.249.74.120 /index.php?m=index&a=farealist&id=3
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T04:34:30+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=add
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T04:35:12+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=pays
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T05:08:29+08:00 ] 66.249.74.120 /index.php?m=index&a=flist&id=23
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T05:23:13+08:00 ] 66.249.74.120 /index.php?m=index&a=flist&id=24
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T05:26:42+08:00 ] 66.249.74.120 /index.php?m=article&a=s&id=42
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T05:29:31+08:00 ] 66.249.74.120 /index.php?m=cart&a=index
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T05:30:13+08:00 ] 66.249.74.120 /index.php?m=index&a=farealist&id=4
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T05:34:25+08:00 ] 66.249.74.120 /index.php?m=article&a=l&id=13
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T06:34:05+08:00 ] 66.249.74.120 /index.php?m=shop&a=flist&id=21
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T06:36:35+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=sess
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T06:41:05+08:00 ] 66.249.74.120 /index.php?m=index&a=flist&id=19
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T06:41:47+08:00 ] 66.249.74.120 /index.php?m=article&a=l&id=15
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T06:46:00+08:00 ] 66.249.74.120 /index.php?m=member&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T06:47:24+08:00 ] 66.249.74.120 /index.php?m=index&a=farealist&id=1
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T06:50:13+08:00 ] 66.249.74.120 /index.php?m=article&a=s&id=43
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T06:51:38+08:00 ] 66.249.74.120 /index.php?m=article&a=s&id=41
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T07:19:34+08:00 ] 220.181.108.157 /index.php?m=cart&a=cartadd&id=86
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T07:19:36+08:00 ] 220.181.108.148 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T07:21:36+08:00 ] 220.181.108.105 /index.php?m=shop&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T07:45:30+08:00 ] 66.249.74.120 /index.php?m=cart&a=cartadd&id=61
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T08:04:27+08:00 ] 66.249.74.133 /index.php?m=shop&a=flist&id=24
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:12:44+08:00 ] 66.249.74.120 /index.php?m=page&a=i&id=ad
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:16:09+08:00 ] 66.249.74.120 /index.php?m=shop&a=flist&id=24
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:19:34+08:00 ] 66.249.74.120 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:23:00+08:00 ] 66.249.74.120 /index.php?m=shop&a=flist&id=20
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:29:34+08:00 ] 66.249.74.120 /index.php?m=shop&a=flist&id=23
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:32:13+08:00 ] 66.249.74.120 /index.php?m=shop&a=uc&id=5
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:35:08+08:00 ] 66.249.74.120 /index.php?m=index&a=farealist&id=2
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:37:35+08:00 ] 123.125.71.69 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:38:03+08:00 ] 66.249.74.120 /index.php?&m=cart&a=cart
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:41:00+08:00 ] 66.249.74.120 /index.php?m=index&a=flist&id=20
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T08:43:57+08:00 ] 66.249.74.120 /index.php?m=shop&a=flist&id=22
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T14:04:59+08:00 ] 123.125.71.16 /index.php?m=page&a=i&id=pays
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:51:17+08:00 ] 220.181.108.110 /index.php?m=cart&a=cartadds&id=86
+DEBUG: Cart Class Initialized
+DEBUG: Cart Class Initialized
+NOTIC: 建议使用I方法替代_get
+
+[ 2014-07-19T16:54:11+08:00 ] 122.6.164.39 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:54:26+08:00 ] 122.6.164.39 /index.php?m=member&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:54:37+08:00 ] 122.6.164.39 /index.php?m=member&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:54:39+08:00 ] 122.6.164.39 /index.php?m=index&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:54:49+08:00 ] 122.6.164.39 /index.php?m=shop&a=farealist&id=4
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:54:52+08:00 ] 122.6.164.39 /index.php?m=shop&a=index
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:54:59+08:00 ] 122.6.164.39 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:55:01+08:00 ] 122.6.164.39 /index.php?m=shop&a=farealist&id=1
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:55:05+08:00 ] 122.6.164.39 /index.php?m=shop&a=uc&id=5
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T16:55:06+08:00 ] 122.6.164.39 /index.php?m=Cart&a=cart
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `sn_foodcat` [ RunTime:0.000748s ]
+SQL: SELECT * FROM `sn_foodcat`  [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `sn_area` [ RunTime:0.000571s ]
+SQL: SELECT * FROM `sn_area`  [ RunTime:0.000090s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000826s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `sn_config`  [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000937s ]
+SQL: SELECT * FROM `sn_pages` LIMIT 4   [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000876s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000813s ]
+SQL: SELECT * FROM `sn_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000175s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041486s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000336s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001469s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000619s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2014-07-19T17:58:02+08:00 ] 162.244.33.8 /
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T19:15:23+08:00 ] 192.99.200.213 /?q=user/register
+DEBUG: Cart Class Initialized
+
+[ 2014-07-19T19:15:25+08:00 ] 192.99.200.213 /?q=user/register
+DEBUG: Cart Class Initialized
+

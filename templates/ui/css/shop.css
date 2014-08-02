@@ -1,0 +1,144 @@
+.shop-area{
+	background-color: #EEEEEE;
+}
+.shop-area .topshop{
+	margin-top: -20px;
+}
+.shop-area .topshop .title{
+	padding-left: 10px;
+	font-size:20px;
+	color:#2db8ad;
+}
+.shop-area .topshop .shop{
+	height: 100px;
+	background-color: white;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	width: 270px;
+
+}
+/*手机版*/
+.shop-area .topshop .mshop{
+	height: 100px;
+	background-color: white;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+
+}
+.shop-area .topshop hr {
+margin-top: 10px;
+margin-bottom: 10px;
+border: 0;
+border-top: 1px solid white;
+}
+.shop-area .shoplist .title{
+	padding-left: 10px;
+	font-size:20px;
+	color:#2db8ad;
+}
+.shop-area .shoplist hr {
+margin-top: 10px;
+margin-bottom: 10px;
+border: 0;
+border-top: 1px solid white;
+}
+
+.shop-area .shop{
+	height: 100px;
+	background-color: white;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	width: 270px;
+
+}
+.shop-area .shop img{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.shop-area .shop .info{
+	margin-left: 10px;
+}
+	
+.shop-area .shop h2{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.shop-area .label-default{
+	margin-bottom: 5px;
+}
+.shop-area p{
+	margin-top: 5px;
+}
+
+/*电脑版全局shop*/
+.shop{
+	height: 100px;
+	background-color: white;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	width: 270px;
+
+}
+.shop img{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.shop .info{
+	margin-left: 10px;
+}
+.shop h2{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.shop p{
+	margin-top: 5px;
+}
+/*手机版*/
+.mshop{
+	height: 100px;
+	background-color: white;
+	padding: 8px 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+
+}
+.mshop img{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.mshop .info{
+	margin-left: 10px;
+}
+.mshop h2{
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.mshop p{
+	margin-top: 5px;
+}

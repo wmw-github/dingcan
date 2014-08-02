@@ -1,0 +1,578 @@
+[ 2014-06-29T11:39:02+08:00 ] 122.6.164.39 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [8] Undefined index: admin_key /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 9 行.
+
+[ 2014-06-29T11:39:03+08:00 ] 122.6.164.39 /admin.php?m=Public&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024977s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000380s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000258s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001745s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000809s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2014-06-29T11:39:04+08:00 ] 122.6.164.39 /admin.php?m=Public&a=dologin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `sn_members` [ RunTime:0.020232s ]
+NOTIC: [8] Undefined index: verify /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/PublicAction.class.php 第 49 行.
+SQL: SELECT `uid`,`userpass`,`nickname`,`username`,`create_time`,`usergroup` FROM `sn_members` WHERE ( `username` = 'admin888' ) AND ( `userlevel` = 99 ) LIMIT 1   [ RunTime:0.000590s ]
+SQL: UPDATE `sn_members` SET `create_time`=1404013144,`last_login_time`=1403959592,`last_login_ip`='122.6.164.39' WHERE ( uid=2 ) [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: var /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/functions.php 第 247 行.
+
+[ 2014-06-29T11:39:06+08:00 ] 122.6.164.39 /admin.php?&m=Config&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000840s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000919s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000795s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000272s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+NOTIC: [8] Undefined index: id /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/ConfigAction.class.php 第 13 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=0 )  [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044022s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000407s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000322s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000207s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001551s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000607s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2014-06-29T11:39:08+08:00 ] 122.6.164.39 /admin.php?m=Config&a=index&id=3
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000834s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000913s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000814s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000081s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SELECT * FROM `sn_config` WHERE ( cate=3 )  [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant value - assumed 'value' /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/bc51960d58ec9ab0352753c996dc2d36.php 第 212 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/bc51960d58ec9ab0352753c996dc2d36.php 第 244 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047055s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000417s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000329s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001660s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000642s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2014-06-29T11:39:10+08:00 ] 122.6.164.39 /admin.php?m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000831s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000903s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000792s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000097s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000075s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodorder` [ RunTime:0.026838s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_foodorder` LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT * FROM `sn_foodorder` LIMIT 0,10   [ RunTime:0.000897s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029311s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000392s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000323s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000210s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001648s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000636s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2014-06-29T11:39:11+08:00 ] 122.6.164.39 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000818s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000893s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000804s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000098s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000077s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000877s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_article` LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT * FROM `sn_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027524s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000557s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000336s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001707s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000625s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2014-06-29T11:39:14+08:00 ] 122.6.164.39 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000824s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000889s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000797s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000104s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000081s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000916s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_article` LIMIT 1   [ RunTime:0.000104s ]
+SQL: SELECT * FROM `sn_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000095s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017801s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000424s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000331s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001573s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000620s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2014-06-29T11:39:17+08:00 ] 122.6.164.39 /admin.php?m=Member&a=shoporder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001068s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001167s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001057s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000112s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_foodorder` [ RunTime:0.001144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_foodorder` LIMIT 1   [ RunTime:0.000103s ]
+SQL: SELECT * FROM `sn_foodorder` LIMIT 0,10   [ RunTime:0.000094s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015449s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000505s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000469s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000275s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002007s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000700s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2014-06-29T11:39:23+08:00 ] 122.6.164.39 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001164s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001210s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001100s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000111s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000914s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_article` LIMIT 1   [ RunTime:0.000101s ]
+SQL: SELECT * FROM `sn_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017643s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000526s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000329s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001668s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000622s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2014-06-29T11:39:26+08:00 ] 122.6.164.39 /admin.php?m=Article&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000814s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000891s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000800s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000100s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000077s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000839s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000105s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027519s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000358s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000315s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000282s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001642s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2014-06-29T11:41:00+08:00 ] 122.6.164.39 /admin.php?m=Article&a=addsave
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001078s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001220s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001119s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000122s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant 　　　　 - assumed '　　　　' /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 406 行.
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001221s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+SQL: INSERT INTO `sn_article` (`acid`,`atitle`,`create_time`,`alink`,`content`) VALUES (15,'6.29更新日志',1404013260,'','&lt;p&gt;更新点菜自动飞入购物车效果，目前测试正常，仅实现首页和菜单页面，有待优化&lt;br/&gt;&lt;/p&gt;') [ RunTime:0.021205s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041682s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000423s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000372s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001701s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000639s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2014-06-29T11:41:02+08:00 ] 122.6.164.39 /admin.php?m=Article&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000827s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000880s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000780s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000102s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000079s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001179s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000158s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017790s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000577s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000524s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002729s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000719s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2014-06-29T11:41:48+08:00 ] 122.6.164.39 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001129s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001212s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001116s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000126s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_article` LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT * FROM `sn_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019488s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000642s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000420s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000437s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002843s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000699s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2014-06-29T11:41:52+08:00 ] 122.6.164.39 /admin.php?m=Article&a=edit&id=43
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000820s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.000886s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000773s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000097s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000073s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.000914s ]
+SQL: SELECT * FROM `sn_article` WHERE ( `aid` = 43 ) LIMIT 1   [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000776s ]
+SQL: SELECT * FROM `sn_article_cat`  [ RunTime:0.000101s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033813s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000403s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000331s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000214s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000661s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2014-06-29T11:43:18+08:00 ] 122.6.164.39 /admin.php?m=Article&a=editsave
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Lib/Core/App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.000993s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000121s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001055s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.000939s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000090s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [8] Use of undefined constant 　　　　 - assumed '　　　　' /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 406 行.
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001086s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given /home/kbbgiwvn/domains/wmwcom.com/public_html/inc/Common/common.php 第 110 行.
+SQL: UPDATE `sn_article` SET `acid`=15,`atitle`='6.29更新日志',`create_time`=1404013398,`sort`=0,`content`='&lt;p&gt;更新点菜自动飞入购物车效果，目前测试正常，仅实现首页和菜单页面，有待优化&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;------------------------------------&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;更新在线客服系统，目前测试版，qq是我自己的号码，其他比如：马上试用和申请合作都没实现效果，有待后期实现。&lt;/p&gt;' WHERE ( `aid` = 43 ) [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010348s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000358s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000341s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000215s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001499s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000654s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2014-06-29T11:43:20+08:00 ] 122.6.164.39 /admin.php?m=Article&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `sn_article_cat` [ RunTime:0.001130s ]
+SQL: SELECT * FROM `sn_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `sn_pages` [ RunTime:0.001221s ]
+SQL: SELECT * FROM `sn_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `sn_config` [ RunTime:0.001098s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appid" ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `sn_config` WHERE ( name="appkey" ) LIMIT 1   [ RunTime:0.000123s ]
+NOTIC: [2] file_get_contents(http://union.bijiadao.net/api.php?a=open&amp;appid=12525525852&amp;appkey=88888888855855&amp;url=www.wmwcom.com) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Lib/Action/CommonAction.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `sn_article` [ RunTime:0.001101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sn_article` LIMIT 1   [ RunTime:0.000314s ]
+SQL: SELECT * FROM `sn_article` ORDER BY aid desc LIMIT 0,10   [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+NOTIC: [8] Undefined index: dcsort /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 172 行.
+NOTIC: [8] Undefined index: channlid /home/kbbgiwvn/domains/wmwcom.com/public_html/admin/Runtime/Cache/6a0fa1355e20b485f823227ab394fc93.php 第 179 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032283s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000622s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000365s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000256s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001912s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000597s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000705s ]
+

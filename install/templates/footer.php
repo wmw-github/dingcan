@@ -1,0 +1,1 @@
+<div class="footer"> &copy; 2014-2020 <a href="http://www.wangminwei.com" target="_blank">民伟网络</a>　&& 订餐系统　　简单实用 </div>
