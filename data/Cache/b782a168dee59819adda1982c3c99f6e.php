@@ -25,9 +25,9 @@
        <?php if(is_array($cartdata)): $i = 0; $__LIST__ = $cartdata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
             <td > <small style="margin-top:3px;margin-bottom:0px;"> <?php echo ($vo["name"]); ?></small></td>
             <td >
-			<a class="add" href="<?php echo U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=1');?>">+</a>
+			<a class="add" href="<?php echo U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=1');?>"><span class="glyphicon glyphicon-plus-sign"></span></a>
 			<?php echo ($vo["qty"]); ?>
-				<a class="add" href="<?php echo U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=-1');?>">-</a>	
+				<a class="add" href="<?php echo U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=-1');?>"><span class="glyphicon glyphicon-minus-sign"></span></a>	
 			
 
 </td>

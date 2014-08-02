@@ -27,9 +27,9 @@
           <tr>
             <td > <small style="margin-top:3px;margin-bottom:0px;"> {$vo.name}</small></td>
             <td >
-			<a class="add" href="{:U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=1')}">+</a>
+			<a class="add" href="{:U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=1')}"><span class="glyphicon glyphicon-plus-sign"></span></a>
 			{$vo.qty}
-				<a class="add" href="{:U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=-1')}">-</a>	
+				<a class="add" href="{:U('Cart/cartupdate/','id='.$vo['rowid'].'&cid=-1')}"><span class="glyphicon glyphicon-minus-sign"></span></a>	
 			
 
 </td>

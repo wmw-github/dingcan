@@ -295,8 +295,8 @@
 						<img src="<?php echo ($url); echo ($vo["fpic"]); ?>">
 						<br>
 						<small><?php echo ($vo["fname"]); ?></small>
-						<span class="label label-success">￥<?php echo ($vo["fprice"]); ?></span>
-						<a href="<?php echo U('Cart/cartadd/','id='.$vo['fid']);?>" data-target="#ajax_target" data-trigger="ajax" class="button button-rounded button-flat-highlight" title="加入购物车"><span class="glyphicon glyphicon-plus addcart"></span></a>
+						<span class="red">￥<?php echo ($vo["fprice"]); ?></span>
+						<p><a href="<?php echo U('Cart/cartadd/','id='.$vo['fid']);?>" data-target="#ajax_target" data-trigger="ajax" class="btn btn-danger btn-xs "><span class="glyphicon glyphicon-shopping-cart"></span> 加入购物车</a></p>
 					
 					</div>
 

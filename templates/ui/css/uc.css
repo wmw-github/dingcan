@@ -21,7 +21,7 @@
 	background-color: #EEEEEE;
 }
 .shopmenu .menu .food{
-	height: 200px;
+	height: 210px;
 	background-color: white;
 	padding: 8px 15px;
 	border: 1px solid #ddd;
@@ -29,6 +29,9 @@
 	margin-bottom: 20px;
 	text-align: center;
 
+}
+.shopmenu .menu .food .red{
+	color:red;
 }
 .shopmenu .menu .food .addcart{
 	color: orange;

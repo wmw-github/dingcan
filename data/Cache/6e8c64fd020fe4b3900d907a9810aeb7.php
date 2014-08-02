@@ -38,21 +38,21 @@
       <div class="col-lg-3">
         <a href="/" title="首页"><span>发现身边的美食！</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href=# onclick="javascript:addFavorite2()"><span class="like">加入收藏</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="glyphicon glyphicon-phone"></span> <a href="#"><span class="mobile">手机版</span></a>
+        <span class="glyphicon glyphicon-phone"></span> <a href="<?php echo U('page/i/','id=mobile');?>"><span class="mobile">手机版</span></a>
       </div>
       <div class="col-lg-3"></div>
       <div class="col-lg-6">
         <span class="glyphicon glyphicon-user"></span> <span><a href="<?php echo U('Member/index/');?>">我的订单</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span>
-          <a href="#" >联系客服</a>
+          <a href="<?php echo U('page/i/','id=liucheng');?>" >购餐流程</a>
         </span>&nbsp;&nbsp;&nbsp;&nbsp;
         <span>
-          <a href="#" >我是商家</a>
+          <a href="<?php echo U('page/i/','id=hezuo');?>" >我是商家</a>
           
         </span>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <span>
-          <a href="#" >在线帮助</a>
+          <a href="<?php echo U('page/i/','id=about');?>" >在线帮助</a>
         </span>
       </div>
     </div>
@@ -254,7 +254,7 @@
 <!--版权-->
 <div class="copy">
 <p align="center">© 2014 <?php echo ($name); ?> - <?php echo ($icp); ?></p>
-<p align="center" class="ps">程序由<a title="民伟网络" href="http://www.wangminwei.com/">民伟网络</a>驱动</p>
+<p align="center" class="ps">程序由<a title="民伟网络" href="http://www.wangminwei.com/" target="_blank">民伟网络</a>驱动</p>
 </div>
 
 <!--手机版底部导航-->
