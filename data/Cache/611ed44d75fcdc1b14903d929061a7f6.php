@@ -97,48 +97,14 @@
       </div>
     </div>
     <div class="row area">
-      <div class="col-lg-2 col-md-2 col-xs-6">
-        <a href="/shop/farealist/id/1">
-          <img src="__ROOT__/templates/ui/images/area/area1.jpg" alt="罗一路" class="img-thumbnail">
-          <p>罗一路</p>
+    <?php if(is_array($arealist)): $i = 0; $__LIST__ = $arealist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-lg-2 col-md-2 col-xs-6">
+        <a href="__APP__/shop/farealist/id/<?php echo ($vo["a_id"]); ?>">
+          <img src="__ROOT__/templates/ui/images/area/area<?php echo ($vo["a_id"]); ?>.jpg" alt="<?php echo ($vo["a_name"]); ?>" class="img-thumbnail">
+          <p><?php echo ($vo["a_name"]); ?></p>
         </a>
-      </div>
+      </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
-      <div class="col-lg-2 col-md-2 col-xs-6">
-        <a href="/shop/farealist/id/2" >
-          <img src="__ROOT__/templates/ui/images/area/area2.jpg" alt="罗二路" class="img-thumbnail">
-          <p>罗二路</p>
-        </a>
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-xs-6">
-        <a href="/shop/farealist/id/3" >
-          <img src="__ROOT__/templates/ui/images/area/area3.jpg" alt="罗三路" class="img-thumbnail">
-          <p>罗三路</p>
-        </a>
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-xs-6">
-        <a href="/shop/farealist/id/4" >
-          <img src="__ROOT__/templates/ui/images/area/area4.jpg" alt="罗四路" class="img-thumbnail">
-          <p>罗四路</p>
-        </a>
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-xs-6">
-        <a href="/shop/farealist/id/5" >
-          <img src="__ROOT__/templates/ui/images/area/area5.jpg" alt="罗五路" class="img-thumbnail">
-          <p>罗五路</p>
-        </a>
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-xs-6">
-        <a href="/shop/farealist/id/6" >
-          <img src="__ROOT__/templates/ui/images/area/area6.jpg" alt="罗六路" class="img-thumbnail">
-          <p>罗六路</p>
-        </a>
-      </div>
-    </div>
+     
       <p class="tui">我们正努力将外卖服务推广到临沂其他地方</p>
     </div>
 

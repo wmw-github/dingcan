@@ -16,7 +16,11 @@ class IndexAction extends CommonAction {
 	  $Link=M('Link');
 	  $llist=$Link->where('type=0')->limit(10)->order('lid desc')->select();//最多显示10个友链
 	  $this->assign('llist',$llist);
-	 // dump($foodlist);
+    //地区
+    $Area=D('Area');
+    $arealist=$Area->select();
+    $this->assign('arealist',$arealist);
+	  //dump($arealist);
 	  $this->display();
    }
 

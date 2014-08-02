@@ -57,7 +57,7 @@
 			</div>
 			<div class="pull-left info">
 			<h2>{$vo.sname}</h2>
-			<span class="label label-default">人均：￥{$vo.sprice}</span><span class="label label-warning">{$vo.yingye}</span><br>
+			<span class="label label-default">人均：￥{$vo.sprice}</span><br>
 			<p>满7元起 免费配送</p>
 			</div>
 			</div>
@@ -81,7 +81,7 @@
 		
 	</div><!--row-->
 		  	  	<div class="row shoplist">
-		  	  	<span class="title"><strong><span class="glyphicon glyphicon-flag"></span> 最新商家</strong></span>
+		  	  	<span class="title"><strong><span class="glyphicon glyphicon-flag"></span> 正在营业</strong></span>
 <hr>
 
 <ul class="nav nav-pills" role="tablist">
@@ -105,7 +105,7 @@
 						</div>
 						<div class="pull-left info">
 						<h2>{$vo.sname}</h2>
-						<span class="label label-default">人均：￥{$vo.sprice}</span><span class="label label-warning">{$vo.yingye}</span>
+						<span class="label label-default">人均：￥{$vo.sprice}</span>
 						<p>满7元起 免费配送</p>
 						</div>
 						</div>
@@ -129,7 +129,46 @@
 		  	  		</div>
 		  	  	</volist>
 		  	  	</div>
-		  	  	</div>		
+		  	  	</div>
+
+
+		  	  	<div class="row shoplist">
+		  	  	<span class="title"><strong><span class="glyphicon glyphicon-flag"></span> 暂不营业</strong></span>
+<hr>
+
+		  	  	<volist name="shoplist1" id="vo">
+		  	  		<div class="col-lg-3 col-xs-12 shop hidden-xs" >
+			  	  		<a href="{:U('uc/','id='.$vo['sid'])}">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="{$url}{$vo.spic}" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2>{$vo.sname}</h2>
+						<span class="label label-default">人均：￥{$vo.sprice}</span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div>
+		  	  		<div class="col-lg-3 col-xs-12 mshop visible-xs" >
+			  	  		<a href="{:U('uc/','id='.$vo['sid'])}">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="{$url}{$vo.spic}" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2>{$vo.sname}</h2>
+						<span class="label label-default">人均：￥{$vo.sprice}</span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div>
+		  	  	</volist>
+		  	  	</div>			
 
 
 </div> <!-- container --> 

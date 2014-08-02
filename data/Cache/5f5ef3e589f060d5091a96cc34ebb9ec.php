@@ -146,7 +146,7 @@
 			</div>
 			<div class="pull-left info">
 			<h2><?php echo ($vo["sname"]); ?></h2>
-			<span class="label label-default">人均：￥<?php echo ($vo["sprice"]); ?></span><span class="label label-warning"><?php echo ($vo["yingye"]); ?></span><br>
+			<span class="label label-default">人均：￥<?php echo ($vo["sprice"]); ?></span><br>
 			<p>满7元起 免费配送</p>
 			</div>
 			</div>
@@ -169,7 +169,7 @@
 		
 	</div><!--row-->
 		  	  	<div class="row shoplist">
-		  	  	<span class="title"><strong><span class="glyphicon glyphicon-flag"></span> 最新商家</strong></span>
+		  	  	<span class="title"><strong><span class="glyphicon glyphicon-flag"></span> 正在营业</strong></span>
 <hr>
 
 <ul class="nav nav-pills" role="tablist">
@@ -189,7 +189,7 @@
 						</div>
 						<div class="pull-left info">
 						<h2><?php echo ($vo["sname"]); ?></h2>
-						<span class="label label-default">人均：￥<?php echo ($vo["sprice"]); ?></span><span class="label label-warning"><?php echo ($vo["yingye"]); ?></span>
+						<span class="label label-default">人均：￥<?php echo ($vo["sprice"]); ?></span>
 						<p>满7元起 免费配送</p>
 						</div>
 						</div>
@@ -212,7 +212,44 @@
 		  	  			
 		  	  		</div><?php endforeach; endif; else: echo "" ;endif; ?>
 		  	  	</div>
-		  	  	</div>		
+		  	  	</div>
+
+
+		  	  	<div class="row shoplist">
+		  	  	<span class="title"><strong><span class="glyphicon glyphicon-flag"></span> 暂不营业</strong></span>
+<hr>
+
+		  	  	<?php if(is_array($shoplist1)): $i = 0; $__LIST__ = $shoplist1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-lg-3 col-xs-12 shop hidden-xs" >
+			  	  		<a href="<?php echo U('uc/','id='.$vo['sid']);?>">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="<?php echo ($url); echo ($vo["spic"]); ?>" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2><?php echo ($vo["sname"]); ?></h2>
+						<span class="label label-default">人均：￥<?php echo ($vo["sprice"]); ?></span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div>
+		  	  		<div class="col-lg-3 col-xs-12 mshop visible-xs" >
+			  	  		<a href="<?php echo U('uc/','id='.$vo['sid']);?>">
+						<div class="shopinfo">
+						<div class="pull-left img">
+						<img src="<?php echo ($url); echo ($vo["spic"]); ?>" width="77" height="77" class="img-circle">
+						</div>
+						<div class="pull-left info">
+						<h2><?php echo ($vo["sname"]); ?></h2>
+						<span class="label label-default">人均：￥<?php echo ($vo["sprice"]); ?></span>
+						<p>满7元起 免费配送</p>
+						</div>
+						</div>
+						</a>
+		  	  			
+		  	  		</div><?php endforeach; endif; else: echo "" ;endif; ?>
+		  	  	</div>			
 
 
 </div> <!-- container --> 

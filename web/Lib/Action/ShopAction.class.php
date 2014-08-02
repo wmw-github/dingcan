@@ -60,6 +60,9 @@ public function test(){
 
 
    public function farealist(){
+   	date_default_timezone_set('PRC');
+  	$now  = date("H");//当前时间小时
+
 	$data['sarea']=I('id');//地区分类
 	$sarea=I('id');
 	Session('area',$sarea);
@@ -73,46 +76,52 @@ public function test(){
     $fcid=$Shop->where($data)->getField('fcid');
     $Food=D('Foodcat');
 	 $foodcatlist=$Food->select();
-	 //根据id获取分类名
-	$shoplist=$Shop->where($data)->order('sid desc')->select();
+	 //全部商家
+	//$shoplist=$Shop->where($data)->order('sid desc')->select();
+	 //正在营业
+	$shoplist=$Shop->where($data)->where("opentime<'$now' AND closetime>'$now'")->order('sid desc')->select();
+	//咱不营业
+	$shoplist1=$Shop->where($data)->where("opentime>'$now' OR closetime<'$now'")->order('sid desc')->select();
 	//dump($shoplist);
 	// $opentime=$shoplist[1]['opentime'];
 	// dump($opentime);
 	// echo count($shoplist);
-	
+	//置顶推荐
 	$shoplisttop=$Shop->limit(4)->where($data)->where('ssort=99')->order('sid desc')->select();//4个推荐
 	$this->assign('shoplisttop',$shoplisttop);
 	$this->assign('shoplist',$shoplist);
+	$this->assign('shoplist1',$shoplist1);
 	$Link=M('Link');
 	  $llist=$Link->where('type=0')->limit(10)->order('lid desc')->select();//最多显示10个友链
 	  $this->assign('llist',$llist);
 	// dump($foodlist);
 	 //判断是否营业
-	date_default_timezone_set('PRC');
-  	$now  = date("H");//当前时间小时
+	//date_default_timezone_set('PRC');
+  	//$now  = date("H");//当前时间小时
   	//echo $now;
-  	for($i = 0; $i <count($shoplist); $i++) {
-    		if($shoplist[$i]['opentime']<$now and $now<$shoplist[$i]['closetime']){
-    			//$stauts="营业";
-    			//echo $stauts;
-    			$Shop=D("Shop");
-    			$data['sid']=$shoplist[$i]['sid'];
-    			$map['yingye']="营业";
-    			$res=$Shop->where($data)->save($map);
-    			//dump($res);
+  	//老方法判断是否营业，弃用，新方法在数据库中where条件判断
+  	// for($i = 0; $i <count($shoplist); $i++) {
+   //  		if($shoplist[$i]['opentime']<$now and $now<$shoplist[$i]['closetime']){
+   //  			//$stauts="营业";
+   //  			//echo $stauts;
+   //  			$Shop=D("Shop");
+   //  			$data['sid']=$shoplist[$i]['sid'];
+   //  			$map['yingye']="营业";
+   //  			$res=$Shop->where($data)->save($map);
+   //  			//dump($res);
 
-    		}
-    		else{
-    			//$stauts="关门";
-    			//echo $stauts;
-    			$Shop=D("Shop");
-    			$data['sid']=$shoplist[$i]['sid'];
-    			$map['yingye']="关门";
-    			$res=$Shop->where($data)->save($map);
-    			//dump($res);
+   //  		}
+   //  		else{
+   //  			//$stauts="关门";
+   //  			//echo $stauts;
+   //  			$Shop=D("Shop");
+   //  			$data['sid']=$shoplist[$i]['sid'];
+   //  			$map['yingye']="关门";
+   //  			$res=$Shop->where($data)->save($map);
+   //  			//dump($res);
 
-    		}
-	 	}
+   //  		}
+	 	// }
 	 
 	$this->display();
    }
