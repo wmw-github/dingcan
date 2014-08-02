@@ -1,4 +1,4 @@
-admin/Runtime/Logs
-data/Cache
-data/Logs
-
+admin/Runtime/Logs/
+data/Cache/
+data/Logs/
+data/
