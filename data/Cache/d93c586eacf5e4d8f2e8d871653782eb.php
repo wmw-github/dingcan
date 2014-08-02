@@ -128,7 +128,7 @@
 							//var button_obj = document.getElementById("dingdan");
 							var current = myDate.getHours();
 							//alert("data1="+data3);
-							if(data1<current && current<data2) 
+							if(data1<=current && current<=data2) 
 								{
 									document.write('<span class="label label-success">正常营业!</span>');
 								}else

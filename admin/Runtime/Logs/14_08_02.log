@@ -113,3 +113,164 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2014-08-02T12:16:45+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010014s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.060086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070101s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-08-02T12:16:52+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.010014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_shop` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.010014s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.110158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110158s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010015s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-08-02T12:17:17+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=edit&id=16
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.011016s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.011016s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.011016s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.011016s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.011015s ]
+SQL: SELECT * FROM `wm_shop` WHERE ( `sid` = 16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.011016s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: fcid C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 147 行.
+NOTIC: [8] Undefined index: fcid C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 147 行.
+NOTIC: [8] Undefined index: fcid C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 147 行.
+NOTIC: [8] Undefined index: fcid C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 147 行.
+NOTIC: [8] Undefined index: fcid C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 147 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 188 行.
+NOTIC: [8] Undefined index: value C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 188 行.
+NOTIC: [8] Use of undefined constant value - assumed 'value' C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 219 行.
+NOTIC: [8] Undefined index: value C:\wamp\www\admin\Runtime\Cache\404e7360daef60d6de720f89e4a30d0d.php 第 219 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.132189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132189s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.011016s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011016s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-08-02T12:17:41+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=editsave
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.009815s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.009815s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.009815s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: pic C:\wamp\www\admin\Lib\Action\ShopAction.class.php 第 178 行.
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.009815s ]
+SQL: UPDATE `wm_shop` SET `sname`='成都美食',`scid`=31,`sarea`=1,`scontent`='四川风味，欢迎捧场',`ssort`=0,`sprice`=15,`semail`='1207491516@qq.com',`sphone`='13365393611',`opentime`=6,`closetime`=12,`sdizhi`='罗一路北20米',`stime`=1406953061 WHERE ( `sid` = 16 ) [ RunTime:0.039261s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049075s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.009816s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009816s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.009815s ]
+
+[ 2014-08-02T12:17:43+08:00 ] 127.0.0.1 /admin.php?m=Shop&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat` ORDER BY acid desc LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.009815s ]
+SQL: SELECT * FROM `wm_pages` ORDER BY pagid desc LIMIT 7   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.009815s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.009815s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wm_shop` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_shop` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.107966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107966s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.009815s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009815s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+

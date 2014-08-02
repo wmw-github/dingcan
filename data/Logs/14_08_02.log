@@ -1249,3 +1249,198 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.010371s ]
 INFO: [ view_end ] --END-- [ RunTime:0.010371s ]
 
+[ 2014-08-02T12:16:25+08:00 ] 127.0.0.1 /shop/farealist/id/1.html
+DEBUG: Cart Class Initialized
+
+[ 2014-08-02T12:16:26+08:00 ] 127.0.0.1 /index.php?m=Shop&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010014s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.080115s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.020029s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `wm_config`  [ RunTime:0.010015s ]
+NOTIC: [8] Undefined index: opentime C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Array to string conversion C:\wamp\www\inc\Common\common.php 第 558 行.
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.030044s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.020028s ]
+SQL: SELECT * FROM `wm_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.020029s ]
+SQL: SELECT * FROM `wm_shop` WHERE ( `scid` = 0 ) AND ( sarea='1' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050072s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010014s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010014s ]
+
+[ 2014-08-02T12:16:32+08:00 ] 127.0.0.1 /shop/uc/id/15.html
+DEBUG: Cart Class Initialized
+
+[ 2014-08-02T12:16:33+08:00 ] 127.0.0.1 /index.php/Cart/cart
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.030043s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.050072s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.020029s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `wm_config`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: opentime C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Array to string conversion C:\wamp\www\inc\Common\common.php 第 558 行.
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.150216s ]
+SQL: SELECT * FROM `wm_pages` LIMIT 4   [ RunTime:0.010015s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.020029s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.020028s ]
+SQL: SELECT * FROM `wm_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.010015s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.060086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060086s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010015s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010015s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010014s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010014s ]
+
+[ 2014-08-02T12:16:58+08:00 ] 127.0.0.1 /
+DEBUG: Cart Class Initialized
+
+[ 2014-08-02T12:17:07+08:00 ] 127.0.0.1 /shop/farealist/id/1
+DEBUG: Cart Class Initialized
+
+[ 2014-08-02T12:17:08+08:00 ] 127.0.0.1 /index.php?m=Shop&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.020029s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `wm_config`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: opentime C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Array to string conversion C:\wamp\www\inc\Common\common.php 第 558 行.
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010014s ]
+SQL: SELECT * FROM `wm_pages` LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.040058s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.010015s ]
+SQL: SELECT * FROM `wm_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.020029s ]
+SQL: SELECT * FROM `wm_shop` WHERE ( `scid` = 0 ) AND ( sarea='1' )  [ RunTime:0.010014s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.050072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050072s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-08-02T12:17:46+08:00 ] 127.0.0.1 /shop/farealist/id/1
+DEBUG: Cart Class Initialized
+
+[ 2014-08-02T12:17:47+08:00 ] 127.0.0.1 /index.php?m=Shop&a=test
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.029445s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.009815s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.009816s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `wm_config`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: opentime C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Array to string conversion C:\wamp\www\inc\Common\common.php 第 558 行.
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.009815s ]
+SQL: SELECT * FROM `wm_pages` LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.009815s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.009815s ]
+SQL: SELECT * FROM `wm_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_shop` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_shop` WHERE ( `scid` = 0 ) AND ( sarea='1' )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039261s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.009815s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019630s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-08-02T12:17:58+08:00 ] 127.0.0.1 /shop/uc/id/16.html
+DEBUG: Cart Class Initialized
+
+[ 2014-08-02T12:17:59+08:00 ] 127.0.0.1 /index.php/Cart/cart
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+NOTIC: [2] stripslashes() expects exactly 1 parameter, 2 given C:\wamp\www\inc\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.032390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032390s ]
+SQL: SHOW COLUMNS FROM `wm_foodcat` [ RunTime:0.010796s ]
+SQL: SELECT * FROM `wm_foodcat`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_area` [ RunTime:0.010796s ]
+SQL: SELECT * FROM `wm_area`  [ RunTime:0.000000s ]
+DEBUG: Cart Class Initialized
+SQL: SHOW COLUMNS FROM `wm_config` [ RunTime:0.043186s ]
+SQL: SELECT `name`,`value`,`cate`,`type` FROM `wm_config`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: opentime C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 42 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\web\Lib\Action\CommonAction.class.php 第 45 行.
+NOTIC: [8] Array to string conversion C:\wamp\www\inc\Common\common.php 第 558 行.
+SQL: SHOW COLUMNS FROM `wm_pages` [ RunTime:0.010796s ]
+SQL: SELECT * FROM `wm_pages` LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wm_article_cat` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article_cat`  [ RunTime:0.010796s ]
+SQL: SHOW COLUMNS FROM `wm_article` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `wm_article` WHERE ( acid=15 ) ORDER BY aid desc LIMIT 3   [ RunTime:0.000000s ]
+DEBUG: Cart Class Initialized
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.053983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053983s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010797s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010797s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010796s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010796s ]
+
