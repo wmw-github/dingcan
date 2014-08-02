@@ -79,7 +79,7 @@ public function test(){
 	 //全部商家
 	//$shoplist=$Shop->where($data)->order('sid desc')->select();
 	 //正在营业
-	$shoplist=$Shop->where($data)->where("opentime<'$now' AND closetime>'$now'")->order('sid desc')->select();
+	$shoplist=$Shop->where($data)->where("opentime<='$now' AND closetime>='$now'")->order('sid desc')->select();
 	//咱不营业
 	$shoplist1=$Shop->where($data)->where("opentime>'$now' OR closetime<'$now'")->order('sid desc')->select();
 	//dump($shoplist);
