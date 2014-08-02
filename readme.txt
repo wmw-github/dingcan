@@ -14,8 +14,8 @@
 默认用户：admin888 admin888
 
 ----------------------------
-官网：www.wangminwei.com
-演示：www.wmwcom.com
+官网：http://www.wangminwei.com
+演示：http://www.wmwcom.com
 
 --------------------------
 网站演示图片存放在：uploads\fimg 可删除
